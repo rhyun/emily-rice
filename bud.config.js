@@ -23,7 +23,7 @@ export default async (app) => {
    *
    * @see {@link https://bud.js.org/reference/bud.setPublicPath}
    */
-  app.setPublicPath('/app/themes/sage/public/');
+  app.setPublicPath('/app/themes/emily-rice/public/');
 
   /**
    * Development server settings
@@ -33,8 +33,8 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.watch}
    */
   app
-    .setUrl('http://emily-rice.local')
-    .setProxyUrl('http://example.test')
+    .setUrl('http://emily-rice.local:3000')
+    .setProxyUrl('http://emily-rice.test')
     .watch(['resources/views', 'app']);
 
   /**
