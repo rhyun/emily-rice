@@ -1,0 +1,27 @@
+.listings-nav__btn {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity;
+  transition-duration: 0.25s;
+}
+
+.listings-nav__btn.is-selected {
+  opacity: 1;
+}
+
+.listings-nav__btn:hover {
+  opacity: 1;
+}
+
+.listings-article {
+  display: block;
+}
+
+.listings-article.is-hidden {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}

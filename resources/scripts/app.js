@@ -1,10 +1,20 @@
 import domReady from '@roots/sage/client/dom-ready';
-
 /**
  * Application entrypoint
  */
-domReady(async () => {
-  // ...
+domReady(async (err) => {
+  if (err) {
+    console.error(err);
+  }
+
+  const app = async () => {
+    if (document.querySelector('.js-listings')) {
+      const {listings} = await import('./js/listings.js');
+      listings();
+    }
+  };
+
+  app();
 });
 
 /**
