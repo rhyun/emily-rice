@@ -33,9 +33,10 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.watch}
    */
   app
-    .setUrl('http://emily-rice.local')
-    .setProxyUrl('http://emily-rice.test')
-    .watch(['resources/views', 'app']);
+    .setUrl('http://localhost:3000')
+    .setProxyUrl('http://emily-rice.local')
+    .setPublicUrl('http://emily-rice.local:3000')
+    .watch(['resources/views', 'resources/styles', 'resources/scripts', 'app']);
 
   /**
    * Generate WordPress `theme.json`

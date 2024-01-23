@@ -20,7 +20,10 @@
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "eslint resources/scripts",
     "lint:css": "stylelint \"resources/**/*.{css,scss,vue}\"",
-    "test": "yarn lint"
+    "test": "yarn lint",
+    "clean": "yarn cache clean && yarn build",
+    "clean:dev": "yarn bud clean",
+    "cli": "docker exec -u www-data -it devkinsta_fpm bash"
   },
   "devDependencies": {
     "@roots/bud": "6.20.0",
