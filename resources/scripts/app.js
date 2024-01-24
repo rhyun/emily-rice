@@ -8,9 +8,9 @@ domReady(async (err) => {
   }
 
   const app = async () => {
-    if (document.querySelector('.js-listings')) {
-      const {listings} = await import('./js/listings.js');
-      listings();
+    if (document.querySelector('.js-tabs')) {
+      const {tabs} = await import('./js/tabs.js');
+      tabs();
     }
   };
 

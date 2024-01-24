@@ -1,11 +1,11 @@
-export const listings = async (err) => {
+export const tabs = async (err) => {
   if (err) {
     console.error(err);
   }
 
-  const app = document.querySelector('.js-listings');
-  const tabButtons = app.querySelectorAll('.js-listings-nav__btn');
-  const tabs = app.querySelectorAll('.js-listings-article');
+  const app = document.querySelector('.js-tabs');
+  const tabButtons = app.querySelectorAll('.js-tabs-nav__item');
+  const tabs = app.querySelectorAll('.js-tabs-article');
   const closeBtns = app.querySelectorAll('.js-tabs-close');
   
     // Set first tab-btn as selected and unhide the first tab
@@ -42,4 +42,4 @@ export const listings = async (err) => {
   });
 };
 
-import.meta.webpackHot?.accept(listings);
+import.meta.webpackHot?.accept(tabs);

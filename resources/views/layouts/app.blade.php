@@ -18,7 +18,7 @@
 
         @include('sections.header')
 
-        <div id="container" class="container">
+        <div id="container" class="w-full max-w-none bg-white backdrop-blur-xl backdrop-brightness-200">
             @yield('content')
         </div>
 

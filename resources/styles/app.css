@@ -3,37 +3,38 @@
 @import 'tailwindcss/utilities';
 
 body {
-  @apply prose;
 }
 
-#main {
-  @apply p-4 md:p-8 xl:p-12 2xl:p-16;
+.container {
+  max-width: none;
+  width: 100%;
 }
 
-.listings-nav__btn {
-  opacity: 0.5;
+.tabs {
+}
+
+.tabs-nav__item {
   cursor: pointer;
   transition: opacity;
   transition-duration: 0.25s;
 }
 
-.listings-nav__btn.is-active {
+.tabs-nav__item.is-active {
+  /* opacity: 1; */
+}
+
+.tabs-item:hover {
   opacity: 1;
 }
 
-.listings-nav__btn:hover {
-  opacity: 1;
+.tabs-article.is-active {
+  @apply fixed h-full visible overflow-y-auto opacity-100 top-0 lg:sticky lg:overflow-visible lg:order-first;
 }
 
-.listings-article {
-  display: none;
-}
-
-.listings-article.is-active {
-  display: block;
-}
-
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
+.card {
+  cursor: pointer;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  /* animation-name: lbWRkT; */
+  animation-timing-function: ease-in-out;
 }

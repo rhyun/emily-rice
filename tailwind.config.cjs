@@ -4,13 +4,20 @@ const config = {
   theme: {
     extend: {
       colors: {}, // Extend Tailwind's default colors
+      screens: {
+        'tab': '768px',
+        'land': '1024px',
+        'lap': '1280px',
+        'desk': '1440px',
+        'wide': '1920px',
+      },
     },
   },
 
   plugins: [require('daisyui'), require('@tailwindcss/typography')],
 
   daisyui: {
-    themes: ['bumblebee'],
+    themes: false,
   },
 };
 

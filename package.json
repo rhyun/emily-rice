@@ -37,8 +37,7 @@
     "@roots/sage": "6.20.0",
     "@shufo/prettier-plugin-blade": "^1.13.4",
     "@tailwindcss/typography": "^0.5.10",
-    "daisyui": "^4.6.0",
-    "prettier-plugin-tailwindcss": "^0.5.11"
+    "daisyui": "^4.6.0"
   },
   "dependencies": {
     "remove": "^0.1.5"
