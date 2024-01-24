@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+
     @include('partials.page-header')
 
-    <main class="container">
-
+    <main id="main" class="main">
         {!! get_search_form(false) !!}
 
         <section id="the-list" class="listings js-listings">
@@ -13,13 +13,11 @@
                     <x-alert type="warning">
                         {!! __('Sorry, no results were found.', 'sage') !!}
                     </x-alert>
-
-                    {{-- {!! get_search_form(false) !!} --}}
                 @endnoposts
 
                 @hasposts
                     <nav class="listings-nav js-tabs-nav">
-                        <div>
+                        <div class="flex flex-col gap-y-4">
                             @posts
                                 @include('partials.content-listing-card')
                             @endposts

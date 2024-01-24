@@ -6,7 +6,12 @@ const config = {
       colors: {}, // Extend Tailwind's default colors
     },
   },
-  plugins: [require('daisyui')],
+
+  plugins: [require('daisyui'), require('@tailwindcss/typography')],
+
+  daisyui: {
+    themes: ['bumblebee'],
+  },
 };
 
 module.exports = config;

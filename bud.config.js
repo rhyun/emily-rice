@@ -36,7 +36,7 @@ export default async (app) => {
     .setUrl('http://localhost:3000')
     .setProxyUrl('http://emily-rice.local')
     .setPublicUrl('http://emily-rice.local:3000')
-    .watch(['resources/views', 'resources/styles', 'resources/scripts', 'app']);
+    .watch(['resources/views', 'resources/styles', 'resources/styles', 'app']);
 
   /**
    * Generate WordPress `theme.json`
