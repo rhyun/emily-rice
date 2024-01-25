@@ -5,11 +5,11 @@ const config = {
     extend: {
       colors: {}, // Extend Tailwind's default colors
       screens: {
-        'tab': '768px',
-        'land': '1024px',
-        'lap': '1280px',
-        'desk': '1440px',
-        'wide': '1920px',
+        tab: '768px',
+        land: '1024px',
+        lap: '1280px',
+        desk: '1440px',
+        wide: '1920px',
       },
     },
   },

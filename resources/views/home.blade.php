@@ -28,7 +28,7 @@
                         </div>
                     </nav>
 
-                    <div class="tabs-main h-full w-full grow rounded-lg bg-white lg:row-auto lg:grid lg:grid-cols-1">
+                    <div class="tabs-main h-full w-full grow rounded-lg bg-white shadow-md lg:row-auto lg:grid lg:grid-cols-1">
                         @posts
                             @include('partials.content-list')
                         @endposts

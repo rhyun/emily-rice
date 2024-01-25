@@ -1,4 +1,4 @@
-<button class="tabs-nav__item js-tabs-nav__item card w-full max-w-none rounded-lg bg-white shadow-md"
+<button class="tabs-nav__item js-tabs-nav__item card w-full max-w-none rounded-lg bg-white"
     data-tab-id="post-id-@php(the_ID())">
     <div class="card-body prose prose-sm flex h-full grow flex-col text-left">
         <h3 class="card-title mt-0 flex flex-col">
