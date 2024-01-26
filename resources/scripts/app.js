@@ -1,4 +1,5 @@
 import domReady from '@roots/sage/client/dom-ready';
+import {mediaQuery} from './js/media-query.js';
 /**
  * Application entrypoint
  */
@@ -12,6 +13,8 @@ domReady(async (err) => {
       const {tabs} = await import('./js/tabs.js');
       tabs();
     }
+
+    mediaQuery();
   };
 
   app();

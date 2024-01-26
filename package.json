@@ -36,6 +36,7 @@
     "@roots/eslint-config": "^6.20.0",
     "@roots/sage": "6.20.0",
     "@shufo/prettier-plugin-blade": "^1.13.4",
+    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "daisyui": "^4.6.0"
   },

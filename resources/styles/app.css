@@ -5,18 +5,23 @@
 body {
 }
 
-.container {
-  max-width: none;
-  width: 100%;
+body.is-mobile.tabs-is-open {
+  /* when modal active */
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  /* Other browsers */
+  overscroll-behavior: none;
 }
 
 .tabs {
 }
 
-.tabs-nav__item {
-  cursor: pointer;
-  transition: opacity;
-  transition-duration: 0.25s;
+.tabs-wrapper {
+  @apply lg:overflow-y-auto lg:h-[100vh] lg:overflow-hidden;
+}
+
+.tabs-nav {
 }
 
 .tabs-nav__item.is-active {
@@ -28,13 +33,12 @@ body {
 }
 
 .tabs-article.is-active {
-  @apply fixed h-full visible overflow-y-auto opacity-100 top-0 lg:sticky lg:overflow-visible lg:order-first;
+  @apply visible fixed left-0 top-0 block w-full opacity-100 h-screen overflow-hidden lg:relative lg:h-full lg:left-auto lg:overflow-visible lg:overflow-y-auto;
 }
 
 .card {
-  cursor: pointer;
-  animation-duration: 0.25s;
-  animation-fill-mode: both;
-  /* animation-name: lbWRkT; */
-  animation-timing-function: ease-in-out;
+}
+
+.wrapper {
+  @apply mx-auto w-full max-w-screen-xl;
 }
