@@ -5,9 +5,9 @@
     @include('partials.page-header')
 
     <div id="container" class="class">
-        {!! get_search_form(false) !!}
+        @include('partials.page-search')
 
-        <section id="the-list" class="the-list tabs js-tabs h-full w-full bg-gray-100 p-4 md:p-8 xl:p-12 2xl:p-16">
+        <section id="the-list" class="the-list tabs js-tabs h-full w-full bg-white">
             @noposts
                 <x-alert type="warning">
                     {!! __('Sorry, no results were found.', 'sage') !!}
@@ -28,8 +28,8 @@
                         </div>
                     </nav>
 
-                    <section class="tabs-main w-full rounded-lg bg-white shadow-md lg:col-span-2">
-                        <div class="tabs-wrapper">
+                    <section class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:h-screen">
+                        <div class="tabs-wrapper h-full">
                             @posts
                                 @include('partials.content-list')
                             @endposts

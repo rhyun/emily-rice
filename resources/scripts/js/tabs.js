@@ -3,24 +3,28 @@ export const tabs = async (err) => {
     console.error(err);
   }
 
-  let isTablet = document.body.querySelector('.is-tablet');
+  const isLaptop = window.matchMedia('(min-width: 1024px)');
   let app = document.querySelector('.js-tabs');
   let tabButtons = app.querySelectorAll('.js-tabs-nav__item');
   let tabs = app.querySelectorAll('.js-tabs-article');
   const closeBtns = app.querySelectorAll('.js-tabs-close');
 
-  tabButtons[0].classList.toggle('is-active', true);
-  tabs[0].classList.toggle('is-active', true);
-
-  document.addEventListener('DOMContentLoaded', (isTablet) => {
-    console.log('yo');
-    if (!isTablet) {
-      // Set first tab-btn as selected and unhide the first tab
-      console.log('yo');
-      // tabButtons[0].classList.toggle('is-active', true);
-      // tabs[0].classList.toggle('is-active', true);
+  function activeTab(e) {
+    // Check if the media query is true
+    if (e.matches) {
+      tabButtons[0].classList.toggle('is-active', true);
+      tabs[0].classList.toggle('is-active', true);
+    } else {
+      tabButtons[0].classList.toggle('is-active', false);
+      tabs[0].classList.toggle('is-active', false);
     }
-  });
+  }
+
+  // Register event listener
+  // mobileMedia.addEventListener('change', handleTabletChange);
+
+  // Initial check
+  activeTab(isLaptop);
 
   tabButtons.forEach((tabButton) => {
     tabButton.addEventListener('click', (e) => {

@@ -1387,6 +1387,136 @@
           "fontFamily": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
           "name": "Ui-monospace",
           "slug": "mono"
+        },
+        {
+          "fontFamily": "SF Pro Display Regular, sans-serif",
+          "name": "SF Pro Display Regular",
+          "slug": "sf-pro"
+        },
+        {
+          "fontFamily": "SF Pro Display Bold, sans-serif",
+          "name": "SF Pro Display Bold",
+          "slug": "sf-bold"
+        },
+        {
+          "fontFamily": "SF Pro Display Medium, sans-serif",
+          "name": "SF Pro Display Medium",
+          "slug": "sf-medium"
+        },
+        {
+          "fontFamily": "Brandon Grotesque Regular, sans-serif",
+          "name": "Brandon Grotesque Regular",
+          "slug": "bran-reg"
+        },
+        {
+          "fontFamily": "Brandon Grotesque Thin, sans-serif",
+          "name": "Brandon Grotesque Thin",
+          "slug": "bran-thin"
+        },
+        {
+          "fontFamily": "Brandon Grotesque Medium, sans-serif",
+          "name": "Brandon Grotesque Medium",
+          "slug": "bran-med"
+        },
+        {
+          "fontFamily": "Brandon Grotesque Light, sans-serif",
+          "name": "Brandon Grotesque Light",
+          "slug": "bran-light"
+        },
+        {
+          "fontFamily": "Brandon Grotesque Bold, sans-serif",
+          "name": "Brandon Grotesque Bold",
+          "slug": "bran-bold"
+        },
+        {
+          "fontFamily": "Brandon Grotesque Black, sans-serif",
+          "name": "Brandon Grotesque Black",
+          "slug": "bran-black"
+        },
+        {
+          "fontFamily": "utendoblack, sans-serif",
+          "name": "Utendoblack",
+          "slug": "u-black"
+        },
+        {
+          "fontFamily": "utendobold, sans-serif",
+          "name": "Utendobold",
+          "slug": "u-bold"
+        },
+        {
+          "fontFamily": "utendoextra_black, sans-serif",
+          "name": "Utendoextra_black",
+          "slug": "u-extra-black"
+        },
+        {
+          "fontFamily": "utendoextra_bold, sans-serif",
+          "name": "Utendoextra_bold",
+          "slug": "u-extra-bold"
+        },
+        {
+          "fontFamily": "utendoextra_light, sans-serif",
+          "name": "Utendoextra_light",
+          "slug": "u-extra-light"
+        },
+        {
+          "fontFamily": "utendo, sans-serif",
+          "name": "Utendo",
+          "slug": "u-reg"
+        },
+        {
+          "fontFamily": "utendohairline, sans-serif",
+          "name": "Utendohairline",
+          "slug": "u-hair"
+        },
+        {
+          "fontFamily": "utendomedium, sans-serif",
+          "name": "Utendomedium",
+          "slug": "u-medium"
+        },
+        {
+          "fontFamily": "utendoregular, sans-serif",
+          "name": "Utendoregular",
+          "slug": "u-regular"
+        },
+        {
+          "fontFamily": "utendosemibold, sans-serif",
+          "name": "Utendosemibold",
+          "slug": "u-semibold"
+        },
+        {
+          "fontFamily": "utendothin, sans-serif",
+          "name": "Utendothin",
+          "slug": "u-thin"
+        },
+        {
+          "fontFamily": "utendoextra_black, sans-serif",
+          "name": "Utendoextra_black",
+          "slug": "u-xtrablack"
+        },
+        {
+          "fontFamily": "cardobold",
+          "name": "Cardobold",
+          "slug": "cardo-bold"
+        },
+        {
+          "fontFamily": "cardoregular",
+          "name": "Cardoregular",
+          "slug": "cardo"
+        },
+        {
+          "fontFamily": "effra_trialmedium",
+          "name": "Effra_trialmedium",
+          "slug": "effra-medium"
+        },
+        {
+          "fontFamily": "effra_trialregular",
+          "name": "Effra_trialregular",
+          "slug": "effra"
+        },
+        {
+          "fontFamily": "interregular",
+          "name": "Interregular",
+          "slug": "inter"
         }
       ],
       "fontSizes": [

@@ -17,8 +17,8 @@ export default async (app) => {
     .entry('app', ['@scripts/app', '@styles/app'])
     .entry('editor', ['@scripts/editor', '@styles/editor'])
     .assets(['images', 'fonts']);
-
   /**
+
    * Set public path
    *
    * @see {@link https://bud.js.org/reference/bud.setPublicPath}
@@ -33,9 +33,9 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.watch}
    */
   app
-    .setUrl('http://localhost:3000')
+    .setUrl('http://localhost:2222')
     .setProxyUrl('http://emily-rice.local')
-    .setPublicUrl('http://emily-rice.local:3000')
+    .setPublicUrl('http://emily-rice.local:2222')
     .watch(['resources/views', 'resources/styles', 'resources/styles', 'app']);
 
   /**

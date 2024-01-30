@@ -1,24 +1,40 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'common/fonts';
 
 body {
+  @apply bg-white font-inter;
+
+  color: #8c8d8d !important;
+}
+
+li,
+p {
+  color: #a8a8a8 !important;
+}
+
+strong {
+  color: #020617 !important;
 }
 
 body.is-mobile.tabs-is-open {
-  /* when modal active */
-  touch-action: none;
-  -webkit-overflow-scrolling: none;
-  overflow: hidden;
-  /* Other browsers */
-  overscroll-behavior: none;
 }
 
 .tabs {
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-bran-bold text-slate-950 tracking-wide;
+
+  color: #020617 !important;
+}
+
 .tabs-wrapper {
-  @apply lg:overflow-y-auto lg:h-[100vh] lg:overflow-hidden;
 }
 
 .tabs-nav {
@@ -33,12 +49,51 @@ body.is-mobile.tabs-is-open {
 }
 
 .tabs-article.is-active {
-  @apply visible fixed left-0 top-0 block w-full opacity-100 h-screen overflow-hidden lg:relative lg:h-full lg:left-auto lg:overflow-visible lg:overflow-y-auto;
+  @apply visible fixed left-0 top-0 block w-full opacity-100 h-screen overflow-hidden lg:relative lg:left-auto;
 }
 
-.card {
+.tabs-article.is-active {
+  /* when modal active */
+  /* touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden; */
+  /* Other browsers */
+  /* overscroll-behavior: none; */
 }
 
 .wrapper {
   @apply mx-auto w-full max-w-screen-xl;
+}
+
+.btn-primary {
+  align-items: center;
+  appearance: auto;
+  background-color: #e8a723;
+  border-radius: 4.33333px;
+  box-sizing: border-box;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 10.8333px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.433333px;
+  line-height: 54.1667px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0px 27.0833px 0px 27.5167px;
+  place-content: normal center;
+  place-items: center normal;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  transition-delay: 0s, 0s, 0s;
+  transition-duration: 0.25s, 0.25s, 0.25s;
+  transition-property: color, background-color, border-color;
+  transition-timing-function: ease, ease, ease;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
 }
