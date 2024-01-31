@@ -135,6 +135,36 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
+/**
+ * Remove jQuery Migrate.
+ *
+ * @return void
+ */
+add_action('wp_default_scripts', function ($scripts) {
+    if (!is_admin() && isset($scripts->registered['jquery'])) {
+        $script = $scripts->registered['jquery'];
+        if ($script->deps) {
+            // Check whether the script has any dependencies
+            $script->deps = array_diff($script->deps, array('jquery-migrate'));
+        }
+    }
+});
+
+/**
+ * Disabled Access-Control-Allow for Dev-Env (prevent CORS Errors on localhost)
+ *
+ */
+
+add_action('init', function () {
+    if (env('WP_ENV') !== 'development') :
+        return;
+    endif;
+
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+    header('Access-Control-Allow-Credentials: true');
+}, 1);
+
 
 /**
  * Remove comments from admin menu.
