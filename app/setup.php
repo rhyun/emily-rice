@@ -134,3 +134,13 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+
+/**
+ * Remove comments from admin menu.
+ *
+ * @return void
+ */
+add_action('admin_menu', function () {
+    remove_menu_page('edit-comments.php');
+});
