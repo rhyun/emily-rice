@@ -9,6 +9,49 @@
   color: #a2c3c4;
 }
 
-.card-post {
-  @apply border-l-2 border-[#7a8793];
+.category-documentary .card-post {
+  @apply border-t-[#f7bc66];
+}
+.category-features .card-post {
+  @apply border-t-[#79b9e5];
+}
+.category-pilot .card-post {
+  @apply border-t-[#edd0ba];
+}
+.category-unscripted .card-post {
+  @apply border-t-[#bc91cd];
+}
+.category-studio-finance .card-post {
+  @apply border-t-[#77dca0];
+}
+.category-other .card-post {
+  @apply border-t-[#a2c3c4];
+}
+.category-scripted-series .card-post {
+  @apply border-t-[#ef897f];
+}
+
+.category-documentary .card-post__cat a {
+  @apply text-[#f7bc66];
+}
+.category-features .card-post__cat a {
+  @apply text-[#79b9e5];
+}
+.category-pilot .card-post__cat a {
+  @apply text-[#edd0ba];
+}
+.category-unscripted .card-post__cat a {
+  @apply text-[#bc91cd];
+}
+.category-studio-finance .card-post__cat a {
+  @apply text-[#77dca0];
+}
+.category-other .card-post__cat a {
+  @apply text-[#a2c3c4];
+}
+.category-scripted-series .card-post__cat a {
+  @apply text-[#ef897f];
+}
+.card-post__cat a {
+  @apply no-underline;
 }
