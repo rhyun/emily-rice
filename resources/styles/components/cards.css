@@ -1,0 +1,14 @@
+.cards-1 {
+  color: #7a8793;
+  color: #79b9e5;
+  color: #f7bc66;
+  color: #bc91cd;
+  color: #77dca0;
+  color: #ef897f;
+  color: #edd0ba;
+  color: #a2c3c4;
+}
+
+.card-post {
+  @apply border-l-2 border-[#7a8793];
+}

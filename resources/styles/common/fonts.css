@@ -1,0 +1,261 @@
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro Display Regular';
+  src: url('~@fonts/sfprodisplayregular.woff2') format('woff2'),
+    url('~@fonts/sfprodisplayregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro Display Medium';
+  src: url('~@fonts/sfprodisplaymedium.woff2') format('woff2'),
+    url('~@fonts/sfprodisplaymedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro Display Bold';
+  src: url('~@fonts/sfprodisplaybold.woff2') format('woff2'),
+    url('~@fonts/sfprodisplaybold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-- Brandon Grotesque --*/
+@font-face {
+  font-display: swap;
+  font-family: 'Brandon Grotesque Black';
+  src: url('~@fonts/brandon_grotesque_black.woff2') format('woff2'),
+    url('~@fonts/brandon_grotesque_black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Brandon Grotesque Bold';
+  src: url('~@fonts/brandon_grotesque_bold.woff2') format('woff2'),
+    url('~@fonts/brandon_grotesque_bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Brandon Grotesque Light';
+  src: url('~@fonts/brandon_grotesque_light.woff2') format('woff2'),
+    url('~@fonts/brandon_grotesque_light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Brandon Grotesque Medium';
+  src: url('~@fonts/brandon_grotesque_medium.woff2') format('woff2'),
+    url('~@fonts/brandon_grotesque_medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Brandon Grotesque Regular';
+  src: url('~@fonts/brandon_grotesque_regular.woff2') format('woff2'),
+    url('~@fonts/brandon_grotesque_regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Brandon Grotesque Thin';
+  src: url('~@fonts/brandon_grotesque_thin.woff2') format('woff2'),
+    url('~@fonts/brandon_grotesque_thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendoblack';
+  src: url('~@fonts/utendo-black-bf65b1be034099d-webfont.woff2') format('woff2'),
+    url('~@fonts/utendo-black-bf65b1be034099d-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendobold';
+  src: url('~@fonts/utendo-bold-bf65b1be0491ea7-webfont.woff2') format('woff2'),
+    url('~@fonts/utendo-bold-bf65b1be0491ea7-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendoextra_black';
+  src: url('~@fonts/utendo-extrablack-bf65b1be044f52e-webfont.woff2')
+      format('woff2'),
+    url('~@fonts/utendo-extrablack-bf65b1be044f52e-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendoextra_bold';
+  src: url('~@fonts/utendo-extrabold-bf65b1be04a56a2-webfont.woff2')
+      format('woff2'),
+    url('~@fonts/utendo-extrabold-bf65b1be04a56a2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendoextra_light';
+  src: url('~@fonts/utendo-extralight-bf65b1be045e59a-webfont.woff2')
+      format('woff2'),
+    url('~@fonts/utendo-extralight-bf65b1be045e59a-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendohairline';
+  src: url('~@fonts/utendo-hairline-bf65b1be04a16ea-webfont.woff2')
+      format('woff2'),
+    url('~@fonts/utendo-hairline-bf65b1be04a16ea-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendolight';
+  src: url('~@fonts/utendo-light-bf65b1be04c9ad9-webfont.woff2') format('woff2'),
+    url('~@fonts/utendo-light-bf65b1be04c9ad9-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendomedium';
+  src: url('~@fonts/utendo-medium-bf65b1be04a818c-webfont.woff2')
+      format('woff2'),
+    url('~@fonts/utendo-medium-bf65b1be04a818c-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendoregular';
+  src: url('~@fonts/utendo-regular-bf65b1be04f3a0e-webfont.woff2')
+      format('woff2'),
+    url('~@fonts/utendo-regular-bf65b1be04f3a0e-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendosemibold';
+  src: url('~@fonts/utendo-semibold-bf65b1be04d814f-webfont.woff2')
+      format('woff2'),
+    url('~@fonts/utendo-semibold-bf65b1be04d814f-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendothin';
+  src: url('~@fonts/utendo-thin-bf65b1be0431d60-webfont.woff2') format('woff2'),
+    url('~@fonts/utendo-thin-bf65b1be0431d60-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'utendoblack';
+  src: url('~@fonts/utendo-black-bf65b1be034099d-webfont.woff2') format('woff2'),
+    url('~@fonts/utendo-black-bf65b1be034099d-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*! Generated by Font Squirrel (https://www.fontsquirrel.com) on January 28, 2024 */
+
+@font-face {
+  font-display: swap;
+  font-family: 'cardobold';
+  src: url('~@fonts/cardo-bold.woff2') format('woff2'),
+    url('~@fonts/cardo-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'cardoitalic';
+  src: url('~@fonts/cardo-italic.woff2') format('woff2'),
+    url('~@fonts/cardo-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'cardoregular';
+  src: url('~@fonts/cardo-regular.woff2') format('woff2'),
+    url('~@fonts/cardo-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'effra_trialbold_italic';
+  src: url('~@fonts/effra-bdit.woff2') format('woff2'),
+    url('~@fonts/effra-bdit.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'effra_trialmedium';
+  src: url('~@fonts/effra-md.woff2') format('woff2'),
+    url('~@fonts/effra-md.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'effra_trialregular';
+  src: url('~@fonts/effra-rg.woff2') format('woff2'),
+    url('~@fonts/effra-rg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'interregular';
+  src: url('~@fonts/inter-regular.woff2') format('woff2'),
+    url('~@fonts/inter-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

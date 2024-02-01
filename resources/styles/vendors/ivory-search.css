@@ -1,0 +1,23 @@
+.search .is-form-style label {
+  @apply w-full !important;
+}
+
+.search .is-form-style.is-form-style-3.is-ajax-search input.is-search-input {
+  @apply border border-r rounded h-12 md:h-16 lg:h-20 px-4 lg:px-8 font-inter !important;
+}
+
+.search .is-form-style.is-form-style-3 input.is-search-input {
+  border-right: 1px !important;
+}
+
+.is-form-style button.is-search-submit {
+  @apply absolute right-0 w-fit h-fit;
+}
+
+.is-search-icon {
+  @apply flex rounded-r h-12 w-12 md:h-16 md:w-16 lg:w-20 lg:h-20 p-0 m-0 !important;
+}
+
+.is-search-icon svg {
+  @apply grow p-2 md:p-4 lg:p-5;
+}
