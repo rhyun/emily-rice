@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @include('partials.page-header')
+    {{-- @include('partials.page-header') --}}
 
     <div id="container" class="class">
         @include('partials.page-search')
@@ -14,10 +14,10 @@
                 </x-alert>
             @endnoposts
 
-            <div class="wrapper h-full lg:grid lg:grid-cols-3 lg:gap-x-6 2xl:gap-x-8">
+            <div class="wrapper h-full px-4 py-2 md:p-4 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:p-8 xl:p-12 2xl:gap-x-8">
                 @hasposts
                     <nav class="tabs-nav js-tabs-nav w-full">
-                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-1 lg:gap-6 2xl:gap-y-8">
+                        <div class="lg grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-1 lg:gap-6 2xl:gap-y-8">
                             @posts
                                 @include('partials.content-list-card')
                             @endposts
@@ -28,7 +28,8 @@
                         </div>
                     </nav>
 
-                    <section class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:h-screen">
+                    <section
+                        class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:row-auto lg:h-screen lg:border lg:shadow-md">
                         <div class="tabs-wrapper h-full">
                             @posts
                                 @include('partials.content-list')

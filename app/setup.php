@@ -135,6 +135,8 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
+
+
 /**
  * Remove jQuery Migrate.
  *

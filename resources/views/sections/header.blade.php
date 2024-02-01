@@ -7,7 +7,7 @@
 
     <div class="navbar">
         <div class="navbar-start">
-            <a class="btn text-white" href="/list-a-job" role="button">List a Job</a>
+            <a class="btn bg-[#222222] text-white" href="/list-a-job" role="button">List a Job</a>
         </div>
         <div class="navbar-center">
             <a class="brand block border-none" href="{{ home_url('/') }}">

@@ -1,57 +1,93 @@
 .cards-1 {
   color: #7a8793;
-  color: #79b9e5;
-  color: #f7bc66;
+  color: #4fa5e0;
+  color: #f7b14a;
   color: #bc91cd;
-  color: #77dca0;
+  color: #ae2ee0;
   color: #ef897f;
-  color: #edd0ba;
-  color: #a2c3c4;
+  color: #f2a66d;
+  color: #59c4c8;
 }
 
+.card-post {
+  @apply border-t-[#7a8793];
+}
 .category-documentary .card-post {
-  @apply border-t-[#f7bc66];
+  @apply border-t-[#f7b14a];
 }
 .category-features .card-post {
-  @apply border-t-[#79b9e5];
+  @apply border-t-[#4fa5e0];
 }
 .category-pilot .card-post {
-  @apply border-t-[#edd0ba];
+  @apply border-t-[#f2a66d];
 }
 .category-unscripted .card-post {
   @apply border-t-[#bc91cd];
 }
 .category-studio-finance .card-post {
-  @apply border-t-[#77dca0];
+  @apply border-t-[#ae2ee0];
 }
 .category-other .card-post {
-  @apply border-t-[#a2c3c4];
+  @apply border-t-[#59c4c8];
 }
 .category-scripted-series .card-post {
   @apply border-t-[#ef897f];
 }
 
-.category-documentary .card-post__cat a {
-  @apply text-[#f7bc66];
+.card-post__cat {
+  @apply text-[#7a8793];
 }
-.category-features .card-post__cat a {
-  @apply text-[#79b9e5];
+.category-documentary .card-post__cat {
+  @apply text-[#f7b14a];
 }
-.category-pilot .card-post__cat a {
-  @apply text-[#edd0ba];
+.category-features .card-post__cat {
+  @apply text-[#4fa5e0];
 }
-.category-unscripted .card-post__cat a {
+.category-pilot .card-post__cat {
+  @apply text-[#f2a66d];
+}
+.category-unscripted .card-post__cat {
   @apply text-[#bc91cd];
 }
-.category-studio-finance .card-post__cat a {
-  @apply text-[#77dca0];
+.category-studio-finance .card-post__cat {
+  @apply text-[#ae2ee0];
 }
-.category-other .card-post__cat a {
-  @apply text-[#a2c3c4];
+.category-other .card-post__cat {
+  @apply text-[#59c4c8];
 }
-.category-scripted-series .card-post__cat a {
+.category-scripted-series .card-post__cat {
   @apply text-[#ef897f];
 }
-.card-post__cat a {
-  @apply no-underline;
+
+.is-active .card-post,
+.card-post:hover {
+  @apply border-[#7a8793];
+}
+.is-active.category-documentary .card-post,
+.category-documentary .card-post:hover {
+  @apply border-[#f7b14a];
+}
+.is-active.category-features .card-post,
+.category-features .card-post:hover {
+  @apply border-[#4fa5e0];
+}
+.is-active.category-pilot .card-post,
+.category-pilot .card-post:hover {
+  @apply border-[#f2a66d];
+}
+.is-active.category-unscripted .card-post,
+.category-unscripted .card-post:hover {
+  @apply border-[#bc91cd];
+}
+.is-active.category-studio-finance .card-post,
+.category-studio-finance .card-post:hover {
+  @apply border-[#ae2ee0];
+}
+.is-active.category-other .card-post,
+.category-other .card-post:hover {
+  @apply border-[#59c4c8];
+}
+.is-active.category-scripted-series .card-post,
+.category-scripted-series .card-post:hover {
+  @apply border-[#ef897f];
 }

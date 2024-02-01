@@ -1,0 +1,65 @@
+.cards-1 {
+  color: #7a8793;
+  color: #4fa5e0;
+  color: #f7b14a;
+  color: #bc91cd;
+  color: #ae2ee0;
+  color: #ef897f;
+  color: #f2a66d;
+  color: #59c4c8;
+}
+
+.category-documentary .card-post {
+  @apply border-t-[#f7b14a];
+}
+.category-features .card-post {
+  @apply border-t-[#4fa5e0];
+}
+.category-pilot .card-post {
+  @apply border-t-[#f2a66d];
+}
+.category-unscripted .card-post {
+  @apply border-t-[#bc91cd];
+}
+.category-studio-finance .card-post {
+  @apply border-t-[#ae2ee0];
+}
+.category-other .card-post {
+  @apply border-t-[#59c4c8];
+}
+.category-scripted-series .card-post {
+  @apply border-t-[#ef897f];
+}
+
+.category-documentary .article__cat,
+.category-documentary .accent {
+  @apply text-[#f7b14a];
+}
+.category-features .article__cat,
+.category-features .accent {
+  @apply text-[#4fa5e0];
+}
+.category-pilot .article__cat,
+.category-pilot .accent {
+  @apply text-[#f2a66d];
+}
+.category-unscripted .article__cat,
+.category-unscripted .accent {
+  @apply text-[#bc91cd];
+}
+.category-studio-finance .article__cat,
+.category-studio-finance .accent {
+  @apply text-[#ae2ee0];
+}
+.category-other .article__cat,
+.category-other .accent {
+  @apply text-[#59c4c8];
+}
+.category-scripted-series .article__cat,
+.category-scripted-series .accent {
+  @apply text-[#ef897f];
+}
+.article__cat,
+.accent {
+  @apply no-underline;
+}

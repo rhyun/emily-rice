@@ -3,6 +3,7 @@
 @import 'tailwindcss/utilities';
 @import 'common/fonts';
 @import 'common/forms';
+@import 'components/articles';
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/search';
@@ -11,8 +12,7 @@
 @import 'vendors/ivory-search';
 
 body {
-  @apply bg-white font-inter;
-  color: #8c8d8d !important;
+  @apply bg-white font-inter text-slate-300;
 }
 
 h1,
@@ -21,36 +21,16 @@ h3,
 h4,
 h5 {
   @apply font-bran-bold prose text-slate-950 tracking-wide;
-
-  color: #020617 !important;
-}
-
-li,
-p {
-  color: #a8a8a8 !important;
+  color: #222222;
 }
 
 strong {
-  color: #020617 !important;
+  color: #222222 !important;
 }
 
-h3 {
-  @apply text-3xl mb-6;
-}
-
-p {
-  @apply break-words text-pretty leading-normal antialiased mb-6;
-}
-
-p a,
-li a,
-blockquote a {
-  color: rgba(232, 232, 244, 0.9);
-  border-color: rgba(232, 232, 244, 0.8);
-  border-width: 2px;
-  display: inline;
-  padding-bottom: 0px;
-  border-bottom: 1.5px solid #121215;
+.btn,
+.button {
+  @apply text-xs font-inter leading-none tracking-wider font-semibold rounded no-underline uppercase;
 }
 
 .wrapper {
