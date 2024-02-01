@@ -1,7 +1,7 @@
-<article id="post-id-@php the_ID() @endphp" @postclass('tabs-article js-tabs-article invisible h-0 w-full bg-white opacity-0 lg:rounded-lg')>
+<article id="post-id-@php the_ID() @endphp" @postclass('tabs-article js-tabs-article invisible article h-0 w-full bg-white opacity-0 lg:rounded-lg')>
     <section class="prose relative h-full max-w-none overflow-y-auto lg:overflow-visible">
         @include('components.btn-close')
-        <header class="lg:top:0 border-b-2 p-4 md:p-8 lg:sticky xl:p-12 2xl:p-16">
+        <header class="article-header lg:top:0 border-b-4 p-4 md:p-8 lg:sticky xl:p-12 2xl:p-16">
             <div class="">
                 <h3
                     class="article__cat font-inter-bold mb-4 mt-0 border-none text-xs font-extrabold uppercase tracking-wider no-underline">
@@ -29,13 +29,13 @@
         <div class="p-4 md:p-8 lg:h-[calc(100vh-375px)] lg:overflow-y-auto xl:p-12 2xl:p-16">
             <h2 class="uppercase">Job Description</h2>
 
-            <div class="prose 2xl:pl-28">
+            <div class="prose xl:pl-8">
                 @content
 
                 @hasfield('pay_range')
-                <div>
+                <h3>
                     @field('pay_range')
-                    </div>
+                    </h3>
                 @endfield
             </div>
         </div>

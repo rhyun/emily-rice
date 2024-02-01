@@ -21,9 +21,13 @@
 .gfield input[type='email'],
 .gfield input[type='tel'],
 .gfield input[type='number'],
-.gfield textarea,
-.gfield select {
+.gfield textarea {
   @apply rounded font-inter text-[#222222] h-12 py-4 !important;
+}
+
+.gfield select {
+  @apply h-12;
+  line-height: 3rem;
 }
 
 .gfield input::placeholder {
@@ -45,6 +49,17 @@ input[type='button'] {
 
 .is-project-type .gfield_radio {
   @apply grid grid-cols-2 !important;
+}
+
+.gsection_description,
+.gform_confirmation_message_1 {
+  @apply text-slate-700 !important;
+}
+
+.gform_previous_button,
+.gform_next_button,
+.gform_button {
+  @apply bg-[#222222] text-white border-transparent hover:bg-[#222222] hover:opacity-90 hover:text-white !important;
 }
 /* 
 .is-project-type label {

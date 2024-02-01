@@ -61,7 +61,7 @@
 
 .is-active .card-post,
 .card-post:hover {
-  @apply border-[#7a8793];
+  @apply border-[#7a8793] shadow-lg;
 }
 .is-active.category-documentary .card-post,
 .category-documentary .card-post:hover {

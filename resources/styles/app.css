@@ -20,7 +20,7 @@ h2,
 h3,
 h4,
 h5 {
-  @apply font-bran-bold prose text-slate-950 tracking-wide;
+  @apply font-bran-bold prose !max-w-none text-slate-950 tracking-wide;
   color: #222222;
 }
 
@@ -28,11 +28,19 @@ strong {
   color: #222222 !important;
 }
 
-.btn,
-.button {
-  @apply text-xs font-inter leading-none tracking-wider font-semibold rounded no-underline uppercase;
-}
-
 .wrapper {
   @apply mx-auto w-full max-w-screen-xl;
+}
+
+.nav-links {
+  @apply flex justify-between py-4 md:py-8 lg:py-12;
+}
+
+.nav-links a {
+  color: #222222;
+  text-decoration: underline;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
 }
