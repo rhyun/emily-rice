@@ -34,7 +34,7 @@ export default async (app) => {
    */
   app
     .setUrl('http://localhost:2222')
-    .setProxyUrl('https://emilyrice.local')
+    .setProxyUrl('http://emilyrice.local')
     .setPublicUrl('http://emilyrice.local:2222')
     .watch(['resources/views', 'resources/styles', 'resources/styles', 'app']);
 

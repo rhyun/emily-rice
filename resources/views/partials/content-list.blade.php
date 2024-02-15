@@ -2,7 +2,7 @@
     <section class="prose relative h-full max-w-none overflow-y-auto lg:overflow-visible">
         @include('components.btn-close')
         <header class="article-header lg:top:0 border-b-4 p-4 md:p-8 lg:sticky xl:p-12 2xl:p-16">
-            <div class="">
+            <div>
                 <h3
                     class="article__cat font-inter-bold mb-4 mt-0 border-none text-xs font-extrabold uppercase tracking-wider no-underline">
                     @category</h3>
@@ -16,7 +16,7 @@
             </div>
 
             <ul class="flex list-inside flex-wrap p-0 text-sm">
-                <li class="list-none">Los Angeles, CA</li>
+                <li class="list-none">@include('components.item-location')</li>
                 @hasfield('location_type')
                 <li class="">
                     @field('location_type')
@@ -26,16 +26,19 @@
             </ul>
             @include('components.btn-apply')
         </header>
+
         <div class="p-4 md:p-8 lg:h-[calc(100vh-375px)] lg:overflow-y-auto xl:p-12 2xl:p-16">
+            @include('ads.ad-content')
             <h2 class="uppercase">Job Description</h2>
 
             <div class="prose xl:pl-8">
                 @content
 
                 @hasfield('pay_range')
-                <h3>
+                <h3>Pay Range</h3>
+                <p>
                     @field('pay_range')
-                    </h3>
+                    </p>
                 @endfield
             </div>
         </div>

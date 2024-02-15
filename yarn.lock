@@ -1932,6 +1932,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@glidejs/glide@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "@glidejs/glide@npm:3.6.0"
+  checksum: 10c0/fa773b48d28989e4c9a8b986b806a52d98267a83b1fb6de3f16bdbfb2ec62b980643bc21dec7ccb710b65838e06523cc602b5dd9b1826470563329fd46b281ee
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.13":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -4181,9 +4188,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001565, caniuse-lite@npm:^1.0.30001578":
-  version: 1.0.30001581
-  resolution: "caniuse-lite@npm:1.0.30001581"
-  checksum: 10c0/34b048156514eab5932212807428905cbecdef918f7c3d2153d5e8b6885d929e5c0b649f9e135cb1e03e413fbad8e00d1f24ed04cbcca52adc660ef98cad9032
+  version: 1.0.30001585
+  resolution: "caniuse-lite@npm:1.0.30001585"
+  checksum: 10c0/d31b582ab2031ee6097aa8d6d8bc3a4e2f902e42033deb224fab210a0f380ce6be8f64a99be5aa63007ba1753ede157b75c64c1d9975ebf301c66e960b939886
   languageName: node
   linkType: hard
 
@@ -10590,6 +10597,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sage@workspace:."
   dependencies:
+    "@glidejs/glide": "npm:^3.6.0"
     "@roots/bud": "npm:6.20.0"
     "@roots/bud-eslint": "npm:6.20.0"
     "@roots/bud-postcss": "npm:^6.20.0"

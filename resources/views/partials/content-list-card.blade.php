@@ -4,11 +4,10 @@
         <section class="card-body py-x prose prose-sm flex flex-col">
             <header class="flex grow flex-col">
                 <h3
-                    class="card-post__cat font-inter-bold mb-4 mt-0 border-none text-xs font-bold uppercase tracking-wider no-underline">
+                    class="card-post__cat font-inter-bold mb-3 mt-0 border-none text-xs font-bold uppercase tracking-wider no-underline">
                     @category</h3>
-                <h2 class="card-title font-bran-bold mt-0 line-clamp-2 grow text-ellipsis whitespace-normal uppercase">
-                    @title
-                </h2>
+                <h2 class="card-title font-bran-bold m-0 line-clamp-2 grow text-ellipsis whitespace-normal uppercase">
+                    @title<span>.</span></h2>
             </header>
 
             @hasfield('project_subtitle')
@@ -16,10 +15,8 @@
                 @field('project_subtitle')
                 </p>
             @endfield
-            <ul class="flex list-inside flex-wrap gap-4 px-0 text-xs">
-                <li class="list-none px-0">
-                    Los Angeles, CA
-                </li>
+            <ul class="mt-0 flex list-inside flex-wrap gap-4 px-0 text-xs">
+                <li class="list-none px-0">@include('components.item-location')</li>
                 <li class="px-0">@published</li>
             </ul>
         </section>
