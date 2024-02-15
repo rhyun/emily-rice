@@ -48,7 +48,7 @@ input[type='button'] {
 }
 
 .is-project-type .gfield_radio {
-  @apply grid grid-cols-2 !important;
+  /* @apply grid grid-cols-2 !important; */
 }
 
 .gsection_description,

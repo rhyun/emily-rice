@@ -1,0 +1,11 @@
+.glide__slide {
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.glide__slide--active {
+  opacity: 1;
+  visibility: visible;
+}
