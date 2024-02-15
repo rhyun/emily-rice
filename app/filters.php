@@ -43,7 +43,7 @@ function initialize_us_states_filter()
 }
 
 /**
- * Custom post date display to show "time ago" format and ISO 8601 time.
+ * Custom post date display to show "time ago" format if under 30 days and ISO 8601 time.
  *
  * @return string
  */
