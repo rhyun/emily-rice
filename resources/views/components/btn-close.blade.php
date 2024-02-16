@@ -1,6 +1,6 @@
-<button class="tabs-close btn js-tabs-close m:p-8 bg-[#222222] p-4 text-white lg:hidden"
-    onclick="event.preventDefault();"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-        stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+<button class="tabs-close btn btn-circle js-tabs-close absolute left-4 top-4 hover:opacity-90 md:left-8 lg:hidden"
+    onclick="event.preventDefault();">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
     </svg>
 </button>

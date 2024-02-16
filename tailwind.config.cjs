@@ -42,6 +42,10 @@ const config = {
         'effra-medium': ['effra_trialmedium'],
         effra: ['effra_trialregular'],
         inter: ['interregular'],
+        'inter-light': ['interlight'],
+        'inter-semi': ['intersemi_bold'],
+        'inter-bold': ['interbold'],
+        'inter-black': ['interblack'],
       },
       screens: {
         tab: '768px',
@@ -59,6 +63,10 @@ const config = {
               color: theme('colors.black'),
               fontWeight: 'bold',
               fontFamily: theme('fontFamily.sf-bold'),
+            },
+            strong: {
+              color: theme('colors.black'),
+              fontFamily: theme('fontFamily.inter-semi'),
             },
           },
         },

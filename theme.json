@@ -1507,6 +1507,26 @@
           "fontFamily": "interregular",
           "name": "Interregular",
           "slug": "inter"
+        },
+        {
+          "fontFamily": "interlight",
+          "name": "Interlight",
+          "slug": "inter-light"
+        },
+        {
+          "fontFamily": "intersemi_bold",
+          "name": "Intersemi_bold",
+          "slug": "inter-semi"
+        },
+        {
+          "fontFamily": "interbold",
+          "name": "Interbold",
+          "slug": "inter-bold"
+        },
+        {
+          "fontFamily": "interblack",
+          "name": "Interblack",
+          "slug": "inter-black"
         }
       ],
       "fontSizes": [

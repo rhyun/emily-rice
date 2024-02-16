@@ -1,6 +1,6 @@
 .btn,
 .button {
-  @apply text-xs font-inter leading-none tracking-wider font-semibold rounded no-underline uppercase;
+  @apply text-xs font-inter leading-none tracking-wider font-semibold no-underline uppercase;
 }
 
 .btn-primary {
