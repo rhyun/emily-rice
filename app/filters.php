@@ -61,6 +61,6 @@ add_filter('get_the_date', function ($date, $post) {
         return '<span class="entry-date published" datetime="' . esc_attr($iso8601_time) . '">' . esc_html($formatted_date) . '</span>';
     } else {
         // If post is less than 30 days old, show the human-readable time difference
-        return '<span class="entry-date published" datetime="' . esc_attr($iso8601_time) . '">' . esc_html($human_time) . ' ago.</span>';
+        return '<span class="entry-date published" datetime="' . esc_attr($iso8601_time) . '">' . esc_html($human_time) . ' ago</span>';
     }
 }, 10, 2);

@@ -1,62 +1,59 @@
-.cards-1 {
-  color: #7a8793;
-  color: #4fa5e0;
-  color: #f7b14a;
-  color: #bc91cd;
-  color: #ae2ee0;
-  color: #ef897f;
-  color: #f2a66d;
-  color: #59c4c8;
-}
-
 .card-post {
-  @apply border-t-[#7a8793];
+  @apply border-t-uncategorized;
 }
 .category-documentary .card-post {
-  @apply border-t-[#f7b14a];
+  @apply border-t-documentary;
 }
 .category-features .card-post {
-  @apply border-t-[#4fa5e0];
+  @apply border-t-features;
 }
 .category-pilot .card-post {
-  @apply border-t-[#f2a66d];
+  @apply border-t-pilot;
 }
 .category-unscripted .card-post {
-  @apply border-t-[#bc91cd];
+  @apply border-t-unscripted;
 }
 .category-studio-finance .card-post {
-  @apply border-t-[#ae2ee0];
+  @apply border-t-studio;
 }
 .category-other .card-post {
-  @apply border-t-[#59c4c8];
+  @apply border-t-other;
 }
 .category-scripted-series .card-post {
-  @apply border-t-[#ef897f];
+  @apply border-t-scripted;
 }
 
-.card-post__cat {
-  @apply text-[#7a8793];
+.card-post__cat,
+.accent {
+  @apply text-uncategorized;
 }
-.category-documentary .card-post__cat {
-  @apply text-[#f7b14a];
+.category-documentary .card-post__cat,
+.category-documentary .accent {
+  @apply text-documentary;
 }
-.category-features .card-post__cat {
-  @apply text-[#4fa5e0];
+.category-features .card-post__cat,
+.category-features .accent {
+  @apply text-features;
 }
-.category-pilot .card-post__cat {
-  @apply text-[#f2a66d];
+.category-pilot .card-post__cat,
+.category-pilot .accent {
+  @apply text-pilot;
 }
-.category-unscripted .card-post__cat {
-  @apply text-[#bc91cd];
+.category-unscripted .card-post__cat,
+.category-unscripted .accent {
+  @apply text-unscripted;
 }
-.category-studio-finance .card-post__cat {
-  @apply text-[#ae2ee0];
+.category-studio-finance .card-post__cat,
+.category-studio-finance .accent {
+  @apply text-studio;
 }
-.category-other .card-post__cat {
-  @apply text-[#59c4c8];
+.category-other .card-post__cat,
+.category-other .accent {
+  @apply text-other;
 }
-.category-scripted-series .card-post__cat {
-  @apply text-[#ef897f];
+.category-scripted-series .card-post__cat,
+.category-scripted-series .accent {
+  @apply text-scripted;
 }
 
 .is-active .card-post,
@@ -65,29 +62,29 @@
 }
 .is-active.category-documentary .card-post,
 .category-documentary .card-post:hover {
-  @apply border-[#f7b14a];
+  @apply border-documentary;
 }
 .is-active.category-features .card-post,
 .category-features .card-post:hover {
-  @apply border-[#4fa5e0];
+  @apply border-features;
 }
 .is-active.category-pilot .card-post,
 .category-pilot .card-post:hover {
-  @apply border-[#f2a66d];
+  @apply border-pilot;
 }
 .is-active.category-unscripted .card-post,
 .category-unscripted .card-post:hover {
-  @apply border-[#bc91cd];
+  @apply border-unscripted;
 }
 .is-active.category-studio-finance .card-post,
 .category-studio-finance .card-post:hover {
-  @apply border-[#ae2ee0];
+  @apply border-studio;
 }
 .is-active.category-other .card-post,
 .category-other .card-post:hover {
-  @apply border-[#59c4c8];
+  @apply border-other;
 }
 .is-active.category-scripted-series .card-post,
 .category-scripted-series .card-post:hover {
-  @apply border-[#ef897f];
+  @apply border-scripted;
 }

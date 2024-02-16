@@ -3,7 +3,18 @@ const config = {
   content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
   theme: {
     extend: {
-      colors: {}, // Extend Tailwind's default colors
+      colors: {
+        black: '#222222',
+        gray: 'rgba(34, 34, 34, 0.7)',
+        features: '#251b9e',
+        documentary: '#f7b14a',
+        pilot: '#f39a8e',
+        unscripted: '#b295ce',
+        scripted: '#85cbda',
+        studio: '#8AD8C0',
+        other: '#9cb7eb',
+        uncategorized: '#7a8793',
+      }, // Extend Tailwind's default colors
       fontFamily: {
         'sf-pro': ['SF Pro Display Regular, sans-serif'],
         'sf-bold': ['SF Pro Display Bold, sans-serif'],
@@ -39,6 +50,19 @@ const config = {
         desk: '1440px',
         wide: '1920px',
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray'),
+            fontFamily: theme('fontFamily.inter'),
+            'h1, h2, h3, h4': {
+              color: theme('colors.black'),
+              fontWeight: 'bold',
+              fontFamily: theme('fontFamily.sf-bold'),
+            },
+          },
+        },
+      }),
     },
   },
 

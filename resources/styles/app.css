@@ -15,7 +15,7 @@
 @import '../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css';
 
 body {
-  @apply bg-white font-inter text-slate-300;
+  @apply bg-white;
 }
 
 h1,
@@ -23,8 +23,7 @@ h2,
 h3,
 h4,
 h5 {
-  @apply font-bran-bold prose !max-w-none text-slate-950 tracking-wide;
-  color: #222222;
+  @apply prose !max-w-none tracking-wide;
 }
 
 strong {

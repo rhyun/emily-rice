@@ -7,21 +7,23 @@
                     class="card-post__cat font-inter-bold mb-3 mt-0 border-none text-xs font-bold uppercase tracking-wider no-underline">
                     @category</h3>
                 <h2 class="card-title font-bran-bold m-0 line-clamp-2 grow text-ellipsis whitespace-normal uppercase">
-                    @title<span>.</span></h2>
+                    @title<span class="accent">.</span></h2>
             </header>
 
             @hasfield('project_subtitle')
-            <p class="mt-0">
+            <p class="m-0 line-clamp-3">
                 @field('project_subtitle')
                 </p>
             @endfield
-            <ul class="mt-0 flex list-inside flex-wrap gap-4 px-0 text-xs">
-                <li class="list-none px-0">@include('components.item-location')</li>
-                <li class="px-0">@published</li>
+            <ul class="mt-0 flex gap-2.5 px-0 text-xs">
+                <li class="mr-4 list-none p-0">@include('components.item-location')</li>
+                @hasfield('location_type')
+                <li class="mr-4 p-0">
+                    @field('location_type')
+                    </li>
+                @endfield
+                <li class="p-0">@published</li>
             </ul>
         </section>
-        {{-- <div class="card-actions flex grow flex-col justify-end">
-            <a href="#" class="btn w-full rounded no-underline" target="_blank">Details</a>
-        </div> --}}
     </article>
 </button>

@@ -1,17 +1,6 @@
-.cards-1 {
-  color: #7a8793;
-  color: #4fa5e0;
-  color: #f7b14a;
-  color: #bc91cd;
-  color: #ae2ee0;
-  color: #ef897f;
-  color: #f2a66d;
-  color: #59c4c8;
-}
-
 .article,
 .article-header {
-  @apply border-[#7a8793];
+  @apply border-uncategorized;
   box-shadow: rgba(33, 33, 33, 0.2) 0px 4px 9px;
 }
 .category-documentary,
@@ -20,49 +9,49 @@
 }
 .category-features,
 .category-features .article-header {
-  @apply border-[#4fa5e0];
+  @apply border-[#9cb7eb];
 }
 .category-pilot,
 .category-pilot .article-header {
-  @apply border-[#f2a66d];
+  @apply border-[#f39a8e];
 }
 .category-unscripted,
 .category-unscripted .article-header {
-  @apply border-[#bc91cd];
+  @apply border-[#b295ce];
 }
 .category-studio-finance,
 .category-studio-finance .article-header {
-  @apply border-[#ae2ee0];
+  @apply border-[#8AD8C0];
 }
 .category-other,
 .category-other .article-header {
-  @apply border-[#59c4c8];
+  @apply border-[#dadc00];
 }
 .category-scripted-series,
 .category-scripted-series .article-header {
-  @apply border-[#ef897f];
+  @apply border-[#85cbda];
 }
 
 .category-documentary .card-post {
   @apply border-t-[#f7b14a];
 }
 .category-features .card-post {
-  @apply border-t-[#4fa5e0];
+  @apply border-t-[#9cb7eb];
 }
 .category-pilot .card-post {
-  @apply border-t-[#f2a66d];
+  @apply border-t-[#f39a8e];
 }
 .category-unscripted .card-post {
-  @apply border-t-[#bc91cd];
+  @apply border-t-[#b295ce];
 }
 .category-studio-finance .card-post {
-  @apply border-t-[#ae2ee0];
+  @apply border-t-[#8AD8C0];
 }
 .category-other .card-post {
-  @apply border-t-[#59c4c8];
+  @apply border-t-[#dadc00];
 }
 .category-scripted-series .card-post {
-  @apply border-t-[#ef897f];
+  @apply border-t-[#85cbda];
 }
 
 .category-documentary .article__cat,
@@ -71,27 +60,27 @@
 }
 .category-features .article__cat,
 .category-features .accent {
-  @apply text-[#4fa5e0];
+  @apply text-[#9cb7eb];
 }
 .category-pilot .article__cat,
 .category-pilot .accent {
-  @apply text-[#f2a66d];
+  @apply text-[#f39a8e];
 }
 .category-unscripted .article__cat,
 .category-unscripted .accent {
-  @apply text-[#bc91cd];
+  @apply text-[#b295ce];
 }
 .category-studio-finance .article__cat,
 .category-studio-finance .accent {
-  @apply text-[#ae2ee0];
+  @apply text-[#8AD8C0];
 }
 .category-other .article__cat,
 .category-other .accent {
-  @apply text-[#59c4c8];
+  @apply text-[#dadc00];
 }
 .category-scripted-series .article__cat,
 .category-scripted-series .accent {
-  @apply text-[#ef897f];
+  @apply text-[#85cbda];
 }
 .article__cat,
 .accent {
