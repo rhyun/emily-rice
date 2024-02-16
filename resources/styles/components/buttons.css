@@ -4,5 +4,5 @@
 }
 
 .btn-primary {
-  @apply bg-[#222222] text-white border-transparent hover:bg-[#222222] hover:opacity-90 hover:text-white !important;
+  @apply bg-black text-white border-transparent hover:bg-[#222222] hover:opacity-90 hover:text-white !important;
 }

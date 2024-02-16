@@ -23,11 +23,7 @@ h2,
 h3,
 h4,
 h5 {
-  @apply prose !max-w-none tracking-wide;
-}
-
-strong {
-  color: #222222 !important;
+  @apply prose font-inter-bold text-black leading-relaxed !max-w-none tracking-wide;
 }
 
 .wrapper {

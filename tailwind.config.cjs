@@ -6,6 +6,7 @@ const config = {
       colors: {
         black: '#222222',
         gray: 'rgba(34, 34, 34, 0.7)',
+        'light-gray': '#f2f2f2',
         features: '#251b9e',
         documentary: '#f7b14a',
         pilot: '#f39a8e',

@@ -1301,6 +1301,11 @@
           "slug": "neutral-950"
         },
         {
+          "color": "#f2f2f2",
+          "name": "Light-gray",
+          "slug": "light-gray"
+        },
+        {
           "color": "#251b9e",
           "name": "Features",
           "slug": "features"
