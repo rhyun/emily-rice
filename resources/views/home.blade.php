@@ -21,7 +21,7 @@
                 @hasposts
                     <nav class="tabs-nav js-tabs-nav w-full">
                         <div
-                            class="lg grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-1 lg:gap-6 2xl:gap-y-8">
+                            class="grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-1 lg:gap-6 2xl:gap-y-8">
                             @posts
                                 @php $counter++; @endphp
                                 @include('partials.content-list-card')
@@ -45,9 +45,8 @@
                         </div>
                     </nav>
 
-                    <section
-                        class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:row-auto lg:h-screen lg:shadow-[0px_6px_10px_rgba(33,33,33,0.25)]">
-                        <div class="tabs-wrapper h-full">
+                    <section class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:h-screen">
+                        <div class="tabs-wrapper lg:h-screen lg:overflow-hidden lg:shadow-[0px_6px_10px_rgba(33,33,33,0.25)]">
                             @posts
                                 @include('partials.content-list')
                             @endposts

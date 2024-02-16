@@ -7,14 +7,5 @@
 }
 
 .tabs-article.is-active {
-  @apply visible fixed left-0 top-0 block w-full opacity-100 h-screen overflow-hidden lg:relative lg:left-auto;
-}
-
-.tabs-article.is-active {
-  /* when modal active */
-  /* touch-action: none;
-  -webkit-overflow-scrolling: none;
-  overflow: hidden; */
-  /* Other browsers */
-  /* overscroll-behavior: none; */
+  @apply visible fixed left-0 top-0 block w-full opacity-100 h-screen overflow-hidden lg:overflow-visible lg:h-full lg:relative lg:left-auto;
 }

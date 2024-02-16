@@ -1,7 +1,7 @@
 <article id="post-id-@php the_ID() @endphp" @postclass('tabs-article js-tabs-article invisible article h-0 w-full bg-white opacity-0 lg:rounded-lg lg:border')>
-    <section class="prose relative h-full max-w-none overflow-y-auto py-20 lg:overflow-visible lg:py-0">
+    <section class="prose relative h-full max-w-none overflow-y-auto py-20 lg:py-0">
         @include('components.btn-close')
-        <header class="article-header lg:top:0 border-b-2 p-4 md:p-8 lg:sticky lg:p-12">
+        <header class="article-header lg:top:0 border-b-2 p-4 md:p-8 lg:p-12">
             <div>
                 <h5
                     class="article__cat font-inter-semi mt-0 border-none text-xs uppercase tracking-widest no-underline lg:mb-4">
@@ -29,7 +29,7 @@
             </section>
         </header>
 
-        <div class="p-4 md:p-8 lg:overflow-y-auto xl:p-12 2xl:p-16">
+        <div class="p-4 md:p-8 xl:p-12 2xl:p-16">
             @include('ads.ad-content')
             <h2>Job Description</h2>
 
