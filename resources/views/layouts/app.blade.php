@@ -11,7 +11,7 @@
 <body @php(body_class())>
     @php(wp_body_open())
 
-    <div id="app" class="flex min-h-screen flex-col">
+    <div id="app" class="flex min-h-screen flex-col overflow-hidden">
         <a class="sr-only focus:not-sr-only" href="#main">
             {{ __('Skip to content') }}
         </a>

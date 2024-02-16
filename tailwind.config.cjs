@@ -7,6 +7,7 @@ const config = {
         black: '#222222',
         gray: 'rgba(34, 34, 34, 0.7)',
         'light-gray': '#f2f2f2',
+        'medium-gray': '#dfdfdf',
         features: '#251b9e',
         documentary: '#f7b14a',
         pilot: '#f39a8e',
@@ -15,7 +16,11 @@ const config = {
         studio: '#8AD8C0',
         other: '#9cb7eb',
         uncategorized: '#7a8793',
-      }, // Extend Tailwind's default colors
+      },
+      boxShadow: {
+        shadow: '0px 4px 9px rgba(33, 33, 33, 0.1)',
+        'shadow-xl': '0px 6px 10px rgba(33, 33, 33, 0.25)',
+      },
       fontFamily: {
         'sf-pro': ['SF Pro Display Regular, sans-serif'],
         'sf-bold': ['SF Pro Display Bold, sans-serif'],

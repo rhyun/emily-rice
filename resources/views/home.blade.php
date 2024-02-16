@@ -9,7 +9,7 @@
 
         @include('ads.ad-content-full')
 
-        <section id="the-list" class="the-list tabs js-tabs h-full w-full bg-[#F5F5F5]">
+        <section id="the-list" class="the-list tabs js-tabs h-full w-full">
             @noposts
                 <x-alert type="warning">
                     {!! __('Sorry, no results were found.', 'sage') !!}
@@ -20,9 +20,8 @@
                 @php $counter = 0; @endphp
                 @hasposts
                     <nav class="tabs-nav js-tabs-nav w-full">
-
-                        <div class="lg grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-1 lg:gap-6 2xl:gap-y-8">
-
+                        <div
+                            class="lg grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-1 lg:gap-6 2xl:gap-y-8">
                             @posts
                                 @php $counter++; @endphp
                                 @include('partials.content-list-card')
@@ -47,7 +46,7 @@
                     </nav>
 
                     <section
-                        class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:row-auto lg:h-screen lg:border lg:shadow-md">
+                        class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:row-auto lg:h-screen lg:shadow-[0px_6px_10px_rgba(33,33,33,0.25)]">
                         <div class="tabs-wrapper h-full">
                             @posts
                                 @include('partials.content-list')

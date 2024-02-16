@@ -1306,6 +1306,11 @@
           "slug": "light-gray"
         },
         {
+          "color": "#dfdfdf",
+          "name": "Medium-gray",
+          "slug": "medium-gray"
+        },
+        {
           "color": "#251b9e",
           "name": "Features",
           "slug": "features"
