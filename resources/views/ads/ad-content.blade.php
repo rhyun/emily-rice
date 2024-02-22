@@ -1,12 +1,17 @@
-@hasoption('content')
-    <div class="class">
-        <div class="wrapper">
-            @options('content')
-                <a class="" href="@sub('ad_link')" target="_blank">
-                    <img class="m-0 w-full" src="@sub('ad_image', 'url')
-" alt="@sub('ad_image', 'alt')" />
-                </a>
-            @endoptions
-        </div>
-    </div>
+@hasoption('content_toggle')
+    @options('content')
+        <div>
+            <div class="wrapper">
+                @hassub('ad_link')<a href="@sub('ad_link')
+" target="_blank">
+                @endsub
+                @hassub('ad_image')
+                <img class="w-full" src="@sub('ad_image', 'url')
+" alt="@sub('ad_image', 'alt')
+" />
+            @endsub
+        @hassub('ad_link')</a>@endsub
+</div>
+</div>
+@endoptions
 @endhasoptions

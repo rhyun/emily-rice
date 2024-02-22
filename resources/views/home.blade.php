@@ -16,7 +16,7 @@
                 </x-alert>
             @endnoposts
 
-            <div class="wrapper h-full px-4 py-2 md:p-4 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:p-8 xl:p-12 2xl:gap-x-8">
+            <div class="wrapper h-full px-4 py-2 md:p-4 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:py-8 2xl:gap-x-8">
                 @php $counter = 0; @endphp
                 @hasposts
                     <nav class="tabs-nav js-tabs-nav w-full">
