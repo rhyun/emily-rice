@@ -64,3 +64,41 @@ add_filter('get_the_date', function ($date, $post) {
         return '<span class="entry-date published" datetime="' . esc_attr($iso8601_time) . '">' . esc_html($human_time) . ' ago</span>';
     }
 }, 10, 2);
+
+
+/**
+ * Custom Pagination Links.
+ *
+ * @return string
+ */
+/**
+ * Custom Pagination Links.
+ *
+ * @return string
+ */
+add_filter('the_posts_pagination_args', function ($args) {
+    // Number of page links on either side of the current page
+    $args['mid_size']  = 1; // Adjust this to show fewer or more pages around the current page
+
+    // Number of page links at the start and end of the pagination
+    $args['end_size']  = 1; // Adjust this to show fewer or more pages at the ends
+
+    // Previous and Next link texts
+    $args['prev_text'] = __('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+');
+    $args['next_text'] = __('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+');
+
+    // Accessibility text
+    $args['screen_reader_text']  = 'Posts navigation';
+    $args['aria_label']  = 'Posts';
+
+    // Class for the pagination container
+    $args['class'] = 'pagination';
+
+    return $args;
+});

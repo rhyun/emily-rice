@@ -5,7 +5,7 @@ const config = {
     extend: {
       colors: {
         black: '#222222',
-        gray: 'rgba(34, 34, 34, 0.7)',
+        gray: '#83838e',
         'light-gray': '#f2f2f2',
         'medium-gray': '#dfdfdf',
         features: '#251b9e',
@@ -64,11 +64,11 @@ const config = {
         DEFAULT: {
           css: {
             color: theme('colors.gray'),
-            fontFamily: theme('fontFamily.inter'),
+            fontFamily: theme('fontFamily.inter-light'),
             'h1, h2, h3, h4': {
               color: theme('colors.black'),
               fontWeight: 'bold',
-              fontFamily: theme('fontFamily.sf-bold'),
+              fontFamily: theme('fontFamily.bran-bold'),
             },
             strong: {
               color: theme('colors.black'),

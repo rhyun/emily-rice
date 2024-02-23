@@ -6,8 +6,10 @@
 @import 'components/articles';
 @import 'components/buttons';
 @import 'components/cards';
+@import 'components/pagination';
 /* @import 'components/search'; */
 @import 'components/tabs';
+@import 'layout/nav';
 @import 'vendors/gravity-forms';
 @import 'vendors/ivory-search';
 @import 'vendors/glide';
@@ -23,24 +25,11 @@ h2,
 h3,
 h4,
 h5 {
-  @apply prose font-inter-bold text-black leading-relaxed !max-w-none tracking-wide;
+  @apply prose text-black leading-relaxed !max-w-none tracking-wide;
 }
 
 .wrapper {
   @apply mx-auto w-full max-w-screen-xl;
-}
-
-.nav-links {
-  @apply flex justify-between py-4 md:py-8 lg:py-12;
-}
-
-.nav-links a {
-  color: #222222;
-  text-decoration: underline;
-}
-
-.nav-links a:hover {
-  text-decoration: none;
 }
 
 body {

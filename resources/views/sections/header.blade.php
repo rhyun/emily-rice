@@ -8,7 +8,10 @@
 
     <div class="navbar">
         <div class="navbar-start">
-            <a class="btn btn-primary" href="/list-a-job" role="button">List a Job</a>
+            <a class="navbar-link" href="/list-a-job">
+                <span class="icon"></span>
+                <span class="uppercase">List a Job</span>
+            </a>
         </div>
         <div class="navbar-center">
             <a class="brand block border-none" href="{{ home_url('/') }}">

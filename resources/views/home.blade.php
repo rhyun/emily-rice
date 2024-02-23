@@ -9,14 +9,14 @@
 
         @include('ads.ad-content-full')
 
-        <section id="the-list" class="the-list tabs js-tabs h-full w-full">
+        <section id="the-list" class="the-list tabs js-tabs h-full w-full bg-[#F8F8F9]">
             @noposts
                 <x-alert type="warning">
                     {!! __('Sorry, no results were found.', 'sage') !!}
                 </x-alert>
             @endnoposts
 
-            <div class="wrapper h-full px-4 py-2 md:p-4 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:py-8 2xl:gap-x-8">
+            <div class="wrapper h-full px-4 py-2 md:p-4 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:py-8 xl:px-0 2xl:gap-x-8">
                 @php $counter = 0; @endphp
                 @hasposts
                     <nav class="tabs-nav js-tabs-nav w-full">
@@ -41,12 +41,12 @@
                         </div>
 
                         <div class="pagination">
-                            {!! get_the_posts_navigation() !!}
+                            {!! get_the_posts_pagination() !!}
                         </div>
                     </nav>
 
                     <section class="tabs-main w-full rounded-lg bg-white lg:sticky lg:top-0 lg:col-span-2 lg:h-screen">
-                        <div class="tabs-wrapper lg:h-screen lg:overflow-hidden lg:shadow-[0px_6px_10px_rgba(33,33,33,0.25)]">
+                        <div class="tabs-wrapper lg:h-screen lg:overflow-hidden">
                             @posts
                                 @include('partials.content-list')
                             @endposts

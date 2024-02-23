@@ -75,19 +75,10 @@ class Post extends Composer
      */
     public function pagination()
     {
-        global $wp_query;
-        $big = 999999999; // Need an unlikely integer
-
-        return paginate_links(array(
-            'base'      => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-            'format'    => '?paged=%#%',
-            'current'   => max(1, get_query_var('paged')),
-            'total'     => $wp_query->max_num_pages,
-            'mid_size'  => 2,  // Determines the number of page numbers shown adjacent to the current page
-            'prev_text' => __('« Back'),
-            'next_text' => __('Next »'),
-            'type'      => 'list', // Output the pagination as an unordered list
-            'end_size'  => 1,  // How many numbers on either the start and the end list edges
-        ));
+        return wp_link_pages([
+            'echo' => 0,
+            'before' => '<p>' . __('Pages:', 'sage'),
+            'after' => '</p>',
+        ]);
     }
 }

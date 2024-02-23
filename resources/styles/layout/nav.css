@@ -1,0 +1,21 @@
+.navbar-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar-link:before {
+  content: '';
+  background-color: rgb(34 34 34 / 30%);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-link:hover:before {
+  bottom: 0;
+  height: 100%;
+}
