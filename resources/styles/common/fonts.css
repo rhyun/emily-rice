@@ -1,5 +1,41 @@
 @font-face {
   font-display: swap;
+  font-family: 'eina-bold';
+  src: url('~@fonts/eina-bold.woff2') format('woff2'),
+    url('~@fonts/eina-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'eina-light';
+  src: url('~@fonts/eina-light.woff2') format('woff2'),
+    url('~@fonts/eina-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'eina-regular';
+  src: url('~@fonts/eina-regular.woff2') format('woff2'),
+    url('~@fonts/eina-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'eina-semibold';
+  src: url('~@fonts/eina-semibold.woff2') format('woff2'),
+    url('~@fonts/eina-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
   font-family: 'SF Pro Display Regular';
   src: url('~@fonts/sfprodisplayregular.woff2') format('woff2'),
     url('~@fonts/sfprodisplayregular.woff') format('woff');
@@ -292,6 +328,150 @@
   font-family: 'intersemi_bold';
   src: url('~@fonts/inter-semibold.woff2') format('woff2'),
     url('~@fonts/inter-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'larsseitbold';
+  src: url('~@fonts/larsseit-bold-webfont.woff2') format('woff2'),
+    url('~@fonts/larsseit-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'larsseitxbold';
+  src: url('~@fonts/larsseit-extrabold-webfont.woff2') format('woff2'),
+    url('~@fonts/larsseit-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'larsseitlight';
+  src: url('~@fonts/larsseit-light-webfont.woff2') format('woff2'),
+    url('~@fonts/larsseit-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'larsseitmed';
+  src: url('~@fonts/larsseit-medium-webfont.woff2') format('woff2'),
+    url('~@fonts/larsseit-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'larsseitthin';
+  src: url('~@fonts/larsseit-thin-webfont.woff2') format('woff2'),
+    url('~@fonts/larsseit-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'circular_black';
+  src: url('~@fonts/circularstd-black-webfont.woff2') format('woff2'),
+    url('~@fonts/circularstd-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'circular_bold';
+  src: url('~@fonts/circularstd-bold-webfont.woff2') format('woff2'),
+    url('~@fonts/circularstd-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'circular_book';
+  src: url('~@fonts/circularstd-book-webfont.woff2') format('woff2'),
+    url('~@fonts/circularstd-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'circular_medium';
+  src: url('~@fonts/circularstd-medium-webfont.woff2') format('woff2'),
+    url('~@fonts/circularstd-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'poppinsbold';
+  src: url('~@fonts/poppins-bold-webfont.woff2') format('woff2'),
+    url('~@fonts/poppins-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'poppinsextrabold';
+  src: url('~@fonts/poppins-extrabold-webfont.woff2') format('woff2'),
+    url('~@fonts/poppins-extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'poppinslight';
+  src: url('~@fonts/poppins-light-webfont.woff2') format('woff2'),
+    url('~@fonts/poppins-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'poppinsmedium';
+  src: url('~@fonts/poppins-medium-webfont.woff2') format('woff2'),
+    url('~@fonts/poppins-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'poppinsregular';
+  src: url('~@fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('~@fonts/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'poppinssemibold';
+  src: url('~@fonts/poppins-semibold-webfont.woff2') format('woff2'),
+    url('~@fonts/poppins-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'poppinsthin';
+  src: url('~@fonts/poppins-thin-webfont.woff2') format('woff2'),
+    url('~@fonts/poppins-thin-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

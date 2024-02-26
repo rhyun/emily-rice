@@ -1,4 +1,4 @@
-.gform_wrapper {
+/* .gform_wrapper {
   @apply max-w-2xl w-full mx-auto;
 }
 
@@ -27,10 +27,10 @@
 
 .gfield_description {
   @apply text-gray;
-}
+} */
 
 /* WYSIWYG Editor */
-form.list-a-job .mce-panel {
+/* form.list-a-job .mce-panel {
   @apply border-black bg-black;
 }
 form.list-a-job .mce-toolbar .mce-btn-group .mce-btn {
@@ -99,7 +99,7 @@ input[type='submit'] {
 .gform_next_button,
 input[type='submit'] {
   @apply absolute right-0;
-}
+} */
 
 /* Custom Radio Buttons  */
 form.list-a-job .gfield_radio {
@@ -175,3 +175,5 @@ form.list-a-job svg path {
   stroke-linejoin: round;
   fill: none;
 }
+
+/* Newsletter */

@@ -16,6 +16,16 @@ add_filter('excerpt_more', function () {
 });
 
 /**
+ * Remove All Gravity Forms Styling
+ *
+ * @return string
+ */
+add_filter('gform_disable_css', function () {
+    // Return true to disable the Gravity Forms CSS
+    return true;
+});
+
+/**
  * Add U.S. Territories to Gravity Forms
  *
  * @return string
@@ -41,6 +51,7 @@ function initialize_us_states_filter()
 
     add_filter('gform_us_states', 'us_states');
 }
+
 
 /**
  * Custom post date display to show "time ago" format if under 30 days and ISO 8601 time.

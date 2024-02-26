@@ -1,0 +1,38 @@
+.gfield input[type='text'],
+.gfield input[type='email'],
+.gfield input[type='tel'],
+.gfield input[type='number'],
+.gfield input[type='url'],
+.gfield textarea {
+  @apply w-full;
+}
+
+/* Default Top Error Message */
+.gform_validation_errors {
+  @apply hidden;
+}
+
+.footer-newsletter {
+  @apply flex items-end;
+}
+
+.footer-newsletter .gform-body {
+  @apply grow;
+}
+
+.footer-newsletter .gform_fields {
+  @apply flex flex-wrap;
+}
+
+.footer-newsletter .gfield--type-section {
+  @apply w-full;
+}
+
+.footer-newsletter .gfield {
+  @apply grow;
+}
+
+input[type='button'],
+input[type='submit'] {
+  @apply btn;
+}

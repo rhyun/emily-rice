@@ -1301,7 +1301,7 @@
           "slug": "neutral-950"
         },
         {
-          "color": "#f2f2f2",
+          "color": "#e5e5e5",
           "name": "Light-gray",
           "slug": "light-gray"
         },
@@ -1387,6 +1387,26 @@
           "fontFamily": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
           "name": "Ui-monospace",
           "slug": "mono"
+        },
+        {
+          "fontFamily": "eina, sans-serif",
+          "name": "Eina",
+          "slug": "eina"
+        },
+        {
+          "fontFamily": "eina-light, sans-serif",
+          "name": "Eina-light",
+          "slug": "eina-light"
+        },
+        {
+          "fontFamily": "eina-semi sans-serif",
+          "name": "Eina-semi sans-serif",
+          "slug": "eina-semi"
+        },
+        {
+          "fontFamily": "eina-bold, sans-serif",
+          "name": "Eina-bold",
+          "slug": "eina-bold"
         },
         {
           "fontFamily": "SF Pro Display Regular, sans-serif",
@@ -1537,6 +1557,86 @@
           "fontFamily": "interblack",
           "name": "Interblack",
           "slug": "inter-black"
+        },
+        {
+          "fontFamily": "circular_med",
+          "name": "Circular_med",
+          "slug": "circular"
+        },
+        {
+          "fontFamily": "larsseitbold",
+          "name": "Larsseitbold",
+          "slug": "larsseit-bold"
+        },
+        {
+          "fontFamily": "larsseitxbold",
+          "name": "Larsseitxbold",
+          "slug": "larsseit-xbold"
+        },
+        {
+          "fontFamily": "larsseitlight",
+          "name": "Larsseitlight",
+          "slug": "larsseit-light"
+        },
+        {
+          "fontFamily": "larsseitmed",
+          "name": "Larsseitmed",
+          "slug": "larsseit"
+        },
+        {
+          "fontFamily": "larsseitthin",
+          "name": "Larsseitthin",
+          "slug": "larsseit-thin"
+        },
+        {
+          "fontFamily": "circular_black",
+          "name": "Circular_black",
+          "slug": "circular-black"
+        },
+        {
+          "fontFamily": "circular_bold",
+          "name": "Circular_bold",
+          "slug": "circular-bold"
+        },
+        {
+          "fontFamily": "circular_book",
+          "name": "Circular_book",
+          "slug": "circular-book"
+        },
+        {
+          "fontFamily": "circular_medium",
+          "name": "Circular_medium",
+          "slug": "circular-med"
+        },
+        {
+          "fontFamily": "poppinsbold",
+          "name": "Poppinsbold",
+          "slug": "poppins-bold"
+        },
+        {
+          "fontFamily": "poppinsextrabold",
+          "name": "Poppinsextrabold",
+          "slug": "poppins-xbold"
+        },
+        {
+          "fontFamily": "poppinslight",
+          "name": "Poppinslight",
+          "slug": "poppins-light"
+        },
+        {
+          "fontFamily": "poppinsmedium",
+          "name": "Poppinsmedium",
+          "slug": "poppins-med"
+        },
+        {
+          "fontFamily": "poppinsregular",
+          "name": "Poppinsregular",
+          "slug": "poppins"
+        },
+        {
+          "fontFamily": "poppinssemibold",
+          "name": "Poppinssemibold",
+          "slug": "poppins-semi"
         }
       ],
       "fontSizes": [

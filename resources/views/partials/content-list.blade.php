@@ -1,13 +1,16 @@
 <article id="post-id-@php the_ID() @endphp" @postclass('tabs-article js-tabs-article invisible article h-0 w-full bg-white opacity-0 lg:rounded-lg')>
     <section class="prose relative h-full max-w-none overflow-y-auto py-20 lg:py-0">
         @include('components.btn-close')
-        <header class="article-header lg:top:0 p-4 md:p-8 lg:p-12">
+        <header class="article-header lg:top:0 p-4 md:p-8">
             <div>
-                @include('components.item-category')
-                <h1 class="mb-0 pb-0 uppercase leading-relaxed tracking-wide">
+                @include('components.item-category-badge')
+
+                <h1 class="mb-0 pb-0 leading-relaxed tracking-wide">
                     @title<span class="accent">.</span>
                 </h1>
+                {{-- @include('components.item-category') --}}
                 @hasfield('project_subtitle')
+
                 <p class="mt-0">
                     @field('project_subtitle')
                     </p>

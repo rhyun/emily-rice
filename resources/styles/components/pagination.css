@@ -3,16 +3,17 @@
 }
 
 .nav-links .page-numbers {
-  @apply btn btn-square border-transparent bg-transparent shadow-none no-underline;
+  @apply btn btn-square btn-ghost border-transparent bg-transparent shadow-none no-underline;
 }
 .nav-links .page-numbers.dots {
-  @apply bg-transparent border-transparent shadow-none px-0 btn-disabled w-auto;
+  @apply btn bg-transparent border-transparent shadow-none px-0 btn-disabled w-auto;
 }
 .nav-links .current {
-  @apply bg-black text-white;
+  @apply bg-black btn-disabled text-white;
 }
+
 .nav-links .page-numbers:first-child.current {
-  @apply ml-auto;
+  @apply mr-auto;
 }
 
 .nav-links .page-numbers.prev {

@@ -6,7 +6,7 @@ const config = {
       colors: {
         black: '#222222',
         gray: '#83838e',
-        'light-gray': '#f2f2f2',
+        'light-gray': '#e5e5e5',
         'medium-gray': '#dfdfdf',
         features: '#251b9e',
         documentary: '#f7b14a',
@@ -18,10 +18,14 @@ const config = {
         uncategorized: '#7a8793',
       },
       boxShadow: {
-        shadow: '0px 4px 9px rgba(33, 33, 33, 0.1)',
-        'shadow-xl': '0px 6px 10px rgba(33, 33, 33, 0.25)',
+        'shadow-card':
+          '0 2px 4px -2px rgba(17, 24, 39, .05), 0 4px 8px -2px rgba(17, 24, 39, .07)',
       },
       fontFamily: {
+        eina: ['eina, sans-serif'],
+        'eina-light': ['eina-light, sans-serif'],
+        'eina-semi': ['eina-semi sans-serif'],
+        'eina-bold': ['eina-bold, sans-serif'],
         'sf-pro': ['SF Pro Display Regular, sans-serif'],
         'sf-bold': ['SF Pro Display Bold, sans-serif'],
         'sf-medium': ['SF Pro Display Medium, sans-serif'],
@@ -52,6 +56,22 @@ const config = {
         'inter-semi': ['intersemi_bold'],
         'inter-bold': ['interbold'],
         'inter-black': ['interblack'],
+        circular: ['circular_med'],
+        'larsseit-bold': ['larsseitbold'],
+        'larsseit-xbold': ['larsseitxbold'],
+        'larsseit-light': ['larsseitlight'],
+        larsseit: ['larsseitmed'],
+        'larsseit-thin': ['larsseitthin'],
+        'circular-black': ['circular_black'],
+        'circular-bold': ['circular_bold'],
+        'circular-book': ['circular_book'],
+        'circular-med': ['circular_medium'],
+        'poppins-bold': ['poppinsbold'],
+        'poppins-xbold': ['poppinsextrabold'],
+        'poppins-light': ['poppinslight'],
+        'poppins-med': ['poppinsmedium'],
+        poppins: ['poppinsregular'],
+        'poppins-semi': ['poppinssemibold'],
       },
       screens: {
         tab: '768px',
@@ -65,10 +85,11 @@ const config = {
           css: {
             color: theme('colors.gray'),
             fontFamily: theme('fontFamily.inter-light'),
-            'h1, h2, h3, h4': {
+            'h1, h2, h3': {
               color: theme('colors.black'),
-              fontWeight: 'bold',
-              fontFamily: theme('fontFamily.bran-bold'),
+              fontWeight: 'font-bold',
+              fontFamily: theme('fontFamily.eina-bold'),
+              margin: 'mt-0',
             },
             strong: {
               color: theme('colors.black'),

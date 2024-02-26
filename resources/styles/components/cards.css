@@ -1,28 +1,79 @@
 .post-cat {
-  @apply bg-uncategorized;
+  @apply text-uncategorized;
 }
 .category-documentary .post-cat {
-  @apply bg-documentary;
+  @apply text-documentary;
 }
 .category-features .post-cat {
-  @apply bg-features;
+  @apply text-features;
 }
 .category-pilot .post-cat {
-  @apply bg-pilot;
+  @apply text-pilot;
 }
 .category-unscripted .post-cat {
-  @apply bg-unscripted;
+  @apply text-unscripted;
 }
 .category-studio-finance .post-cat {
-  @apply bg-studio;
+  @apply text-studio;
 }
 .category-other .post-cat,
 .category-other .accent {
-  @apply bg-other;
+  @apply text-other;
 }
 .category-scripted-series .post-cat {
-  @apply bg-scripted;
+  @apply text-scripted;
 }
+
+.post-cat-badge {
+  @apply bg-uncategorized;
+}
+.category-documentary .post-cat-badge {
+  @apply bg-documentary/[.75];
+}
+.category-features .post-cat-badge {
+  @apply bg-features/[.75];
+}
+.category-pilot .post-cat-badge {
+  @apply bg-pilot/[.75];
+}
+.category-unscripted .post-cat-badge {
+  @apply bg-unscripted/[.75];
+}
+.category-studio-finance .post-cat-badge {
+  @apply bg-studio/[.75];
+}
+.category-other .post-cat-badge,
+.category-other .accent {
+  @apply bg-other/[.75];
+}
+.category-scripted-series .post-cat-badge {
+  @apply bg-scripted/[.75];
+}
+
+/* .hdr-cat {
+  @apply bg-uncategorized/[.6] border-uncategorized;
+}
+.category-documentary .hdr-cat {
+  @apply bg-documentary/[.6] border-documentary;
+}
+.category-features .hdr-cat {
+  @apply bg-features/[.6] border-features;
+}
+.category-pilot .hdr-cat {
+  @apply bg-pilot/[.6] border-pilot;
+}
+.category-unscripted .hdr-cat {
+  @apply bg-unscripted/[.6] border-unscripted;
+}
+.category-studio-finance .hdr-cat {
+  @apply bg-studio/[.6] border-studio;
+}
+.category-other .hdr-cat {
+  @apply bg-other/[.6] border-other;
+}
+.category-scripted-series .hdr-cat {
+  @apply bg-scripted/[.6] border-scripted;
+} */
 
 .accent {
   @apply text-uncategorized;
@@ -55,7 +106,7 @@
 
 .is-active .card-post,
 .card-post:hover {
-  @apply border-uncategorized shadow-[0px_6px_10px_rgba(33,33,33,0.25)];
+  /* @apply border-uncategorized shadow-[0px_6px_10px_rgba(33,33,33,0.25)]; */
 }
 .is-active.category-documentary .card-post,
 .category-documentary .card-post:hover {

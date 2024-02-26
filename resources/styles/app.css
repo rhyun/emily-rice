@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'common/fonts';
-/* @import 'common/forms'; */
+@import 'common/forms';
 @import 'components/articles';
 @import 'components/buttons';
 @import 'components/cards';
@@ -10,29 +10,25 @@
 /* @import 'components/search'; */
 @import 'components/tabs';
 @import 'layout/nav';
+@import 'layout/footer';
 @import 'vendors/gravity-forms';
 @import 'vendors/ivory-search';
 @import 'vendors/glide';
 @import '../../node_modules/@glidejs/glide/dist/css/glide.core.min.css';
 @import '../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css';
 
-body {
-  @apply bg-white;
+.wrapper-sm {
+  @apply mx-auto w-full max-w-screen-lg;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  @apply prose text-black leading-relaxed !max-w-none tracking-wide;
-}
-
 .wrapper {
   @apply mx-auto w-full max-w-screen-xl;
 }
+.wrapper-l {
+  @apply mx-auto w-full max-w-screen-2xl;
+}
 
 body {
+  @apply bg-white;
   background-image: url('../images/bg.png');
   background-repeat: repeat;
 }

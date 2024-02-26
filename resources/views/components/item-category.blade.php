@@ -1,2 +1,4 @@
-<a class="post-cat btn btn-xs mb-3 mt-0 border-none text-xs uppercase tracking-widest text-white no-underline"
-    href="#">@category</a>
+<div class="hdr-cat">
+    <a class="post-cat font-inter m-0 border-none text-xs uppercase leading-none tracking-wide text-black no-underline"
+        href="#">@category</a>
+</div>
