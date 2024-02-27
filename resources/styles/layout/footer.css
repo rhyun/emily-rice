@@ -1,15 +1,7 @@
-.footer-sub-nav {
+.footer-nav {
   @apply m-0 p-0;
 }
 
-.footer-sub-nav__list {
-  @apply flex list-none gap-2 m-0 p-0;
-}
-
-.footer-sub-nav__list li {
-  @apply m-0 p-0 text-sm;
-}
-
-.footer-sub-nav__list li a {
-  @apply no-underline;
+.link-list li a {
+  @apply list-link list-link--dark;
 }

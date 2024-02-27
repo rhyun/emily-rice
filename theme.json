@@ -1236,7 +1236,7 @@
           "slug": "warning-content"
         },
         {
-          "color": "var(--fallback-er,oklch(var(--er)/1))",
+          "color": "#eb7e7f",
           "name": "Error",
           "slug": "error"
         },
@@ -1309,6 +1309,16 @@
           "color": "#dfdfdf",
           "name": "Medium-gray",
           "slug": "medium-gray"
+        },
+        {
+          "color": "#bbc4d2",
+          "name": "Link",
+          "slug": "link"
+        },
+        {
+          "color": "#56616a",
+          "name": "Link-dark",
+          "slug": "link-dark"
         },
         {
           "color": "#251b9e",
@@ -1399,8 +1409,8 @@
           "slug": "eina-light"
         },
         {
-          "fontFamily": "eina-semi sans-serif",
-          "name": "Eina-semi sans-serif",
+          "fontFamily": "eina-semi, sans-serif",
+          "name": "Eina-semi",
           "slug": "eina-semi"
         },
         {

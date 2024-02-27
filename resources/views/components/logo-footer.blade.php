@@ -6,3 +6,9 @@
     {!! $siteName !!}
 @endoption
 </a>
+
+<p class="mt-4 text-xs">
+Production Accounting Studio based<br> in California
+&
+New
+York</p>

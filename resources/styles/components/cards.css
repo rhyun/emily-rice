@@ -74,7 +74,7 @@
 .category-scripted-series .hdr-cat {
   @apply bg-scripted/[.6] border-scripted;
 } */
-
+/* 
 .accent {
   @apply text-uncategorized;
 }
@@ -98,15 +98,15 @@
 }
 .category-scripted-series .accent {
   @apply text-scripted;
-}
-
+} */
+/* 
 .card-post {
-  /* @apply shadow-[0px_4px_9px_rgba(33,33,33,0.1)]; */
+
 }
 
 .is-active .card-post,
 .card-post:hover {
-  /* @apply border-uncategorized shadow-[0px_6px_10px_rgba(33,33,33,0.25)]; */
+
 }
 .is-active.category-documentary .card-post,
 .category-documentary .card-post:hover {
@@ -135,4 +135,4 @@
 .is-active.category-scripted-series .card-post,
 .category-scripted-series .card-post:hover {
   @apply border-scripted;
-}
+} */

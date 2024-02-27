@@ -32,3 +32,49 @@ body {
   background-image: url('../images/bg.png');
   background-repeat: repeat;
 }
+
+.btn {
+  @apply rounded;
+}
+
+@layer components {
+  .list-link {
+    @apply relative inline-block text-white no-underline cursor-pointer;
+  }
+
+  .list-link:before {
+    @apply bg-link absolute -bottom-0.5 left-0 z-[1] h-px w-full origin-[0%_50%] scale-0 duration-300;
+    content: '';
+  }
+
+  .list-link:hover:before {
+    @apply scale-100;
+  }
+
+  .list-link:after {
+    @apply bg-link absolute -bottom-0.5 left-0 z-0 h-px w-full;
+    content: '';
+  }
+
+  .list-link--dark:after {
+    @apply bg-link-dark;
+  }
+}
+
+@layer utilities {
+  .centered {
+    @apply fixed left-1/2 -translate-x-1/2;
+  }
+
+  .centered-vertical {
+    @apply fixed top-1/2 -translate-y-1/2;
+  }
+
+  .centered-horizontal {
+    @apply fixed left-1/2 -translate-x-1/2;
+  }
+
+  .centered-none {
+    @apply static inset-auto;
+  }
+}

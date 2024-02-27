@@ -1,34 +1,35 @@
 <button @postclass('tabs-nav__item js-tabs-nav__item') data-tab-id="post-id-@php the_ID() @endphp">
-    <article
-        class="card card-post border-light-gray flex h-full w-full max-w-none flex-col rounded-2xl border bg-white text-left shadow transition ease-in-out">
-        <section class="card-body prose prose-sm flex max-w-none flex-col px-6 pb-4">
-            <header class="flex flex-col xl:flex-row xl:gap-4">
+    <article class="card card-post border-light-gray h-full w-full rounded-2xl border bg-white shadow transition">
+        <section class="card-body prose prose-sm flex max-w-none flex-col p-6 text-left">
+            <header class="">
                 @include('components.item-category-badge')
 
-                <div class="">
-                    <h3 class="card-title m-0 line-clamp-1 text-ellipsis whitespace-normal font-semibold">
-                        @title<span class="accent">.</span></h3>
-
-                    <ul class="">
-                        <li class="m-0 flex items-end gap-1 p-0">@include('components.item-location')</li>
-                        @hasfield('location_type')
-                        <li class="m-0 flex items-end gap-1 p-0">
-                            @include('components.item-location-type')
-                        </li>
-                        @endfield
-                    </ul>
-                </div>
+                <h2 class="card-title mt-4 line-clamp-1 text-ellipsis">
+                    @title<span class="accent">.</span></h2>
             </header>
 
-            @hasfield('project_subtitle')
-            <p class="m-0 mt-2 line-clamp-3 font-light tracking-wide">
-                @field('project_subtitle')
-                </p>
-            @endfield
+            @include('components.item-excerpt')
 
-            <ul class="not-prose border-light-gray mt-auto flex list-none gap-2.5 px-0 pt-4 text-xs">
-                <li class="m-0 flex items-end gap-1 p-0">@include('components.item-category')</li>
-                <li class="flex-end m-0 ml-auto flex gap-1 p-0">@include('components.item-date')
+            <ul class="*:flex *:m-0 *:p-0 *:gap-1 *:items-center not-prose mt-4 flex list-none gap-4 p-0 text-xs">
+                @hasfield('country')
+                <li>
+                    @include('components.item-location')
+                </li>
+                @endfield
+                @hasfield('location_type')
+                <li>
+                    @include('components.item-location-type')
+                </li>
+                @endfield
+            </ul>
+
+            <ul
+                class="*:flex *:m-0 *:p-0 *:gap-1 *:items-center not-prose m-0 mt-auto flex list-none justify-between gap-4 p-0 text-xs">
+                <li>
+                    @include('components.item-category')
+                </li>
+                <li>
+                    @include('components.item-date')
                 </li>
             </ul>
         </section>

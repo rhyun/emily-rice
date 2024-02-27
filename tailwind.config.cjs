@@ -8,6 +8,8 @@ const config = {
         gray: '#83838e',
         'light-gray': '#e5e5e5',
         'medium-gray': '#dfdfdf',
+        link: '#bbc4d2',
+        'link-dark': '#56616a',
         features: '#251b9e',
         documentary: '#f7b14a',
         pilot: '#f39a8e',
@@ -16,6 +18,7 @@ const config = {
         studio: '#8AD8C0',
         other: '#9cb7eb',
         uncategorized: '#7a8793',
+        error: '#eb7e7f',
       },
       boxShadow: {
         'shadow-card':
@@ -24,7 +27,7 @@ const config = {
       fontFamily: {
         eina: ['eina, sans-serif'],
         'eina-light': ['eina-light, sans-serif'],
-        'eina-semi': ['eina-semi sans-serif'],
+        'eina-semi': ['eina-semi, sans-serif'],
         'eina-bold': ['eina-bold, sans-serif'],
         'sf-pro': ['SF Pro Display Regular, sans-serif'],
         'sf-bold': ['SF Pro Display Bold, sans-serif'],
@@ -87,7 +90,6 @@ const config = {
             fontFamily: theme('fontFamily.inter-light'),
             'h1, h2, h3': {
               color: theme('colors.black'),
-              fontWeight: 'font-bold',
               fontFamily: theme('fontFamily.eina-bold'),
               margin: 'mt-0',
             },

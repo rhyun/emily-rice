@@ -23,6 +23,4 @@
     {{ esc_html($state->name) }}
 @elseif ($country)
     {{ esc_html($country->name) }}
-@else
-    Undisclosed
 @endif

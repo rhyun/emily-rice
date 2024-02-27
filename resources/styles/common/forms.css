@@ -4,24 +4,69 @@
 .gfield input[type='number'],
 .gfield input[type='url'],
 .gfield textarea {
-  @apply w-full;
+  @apply border-light-gray bg-white rounded w-full py-0 px-4 h-12 leading-none;
+}
+
+.ginput_container {
+}
+
+input[type='button'],
+input[type='submit'] {
+  @apply btn;
+}
+
+/* gfield */
+.gfield {
+  @apply relative pb-8;
+}
+
+.gfield_label {
+  @apply absolute left-4 top-2.5 transition-all duration-300;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* .gfield_label:after {
+  content: '';
+} */
+
+.gfield:focus-within .gfield_label {
+  @apply text-sm -translate-y-5;
 }
 
 /* Default Top Error Message */
-.gform_validation_errors {
+.gform_validation_errors,
+.gform_required_legend {
   @apply hidden;
 }
 
+.gfield_validation_message {
+  @apply absolute left-4;
+}
+
+.gfield_error .gfield_validation_message,
+.gfield_error .gfield_label {
+  @apply text-error;
+}
+
+.gfield_error input[type='text'],
+.gfield_error input[type='email'],
+.gfield_error input[type='tel'],
+.gfield_error input[type='number'],
+.gfield_error input[type='url'],
+.gfield_error textarea {
+  @apply border-error;
+}
+
 .footer-newsletter {
-  @apply flex items-end;
+  @apply lg:flex lg:gap-4;
 }
 
 .footer-newsletter .gform-body {
-  @apply grow;
+  @apply lg:grow;
 }
 
 .footer-newsletter .gform_fields {
-  @apply flex flex-wrap;
+  @apply lg:flex lg:flex-wrap lg:gap-4;
 }
 
 .footer-newsletter .gfield--type-section {
@@ -29,10 +74,5 @@
 }
 
 .footer-newsletter .gfield {
-  @apply grow;
-}
-
-input[type='button'],
-input[type='submit'] {
-  @apply btn;
+  @apply lg:grow;
 }

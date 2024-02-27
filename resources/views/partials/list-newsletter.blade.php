@@ -1,4 +1,4 @@
-<section tabindex="0" class="collapse-plus border-base-300 bg-base-200 collapse rounded-lg border">
+<section tabindex="0" class="collapse-arrow border-light-gray collapse rounded-lg border bg-slate-300">
     <div class="collapse-title text-xl font-medium">
         Subscribe to The<strong>List</strong>
     </div>
