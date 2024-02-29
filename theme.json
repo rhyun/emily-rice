@@ -1399,8 +1399,8 @@
           "slug": "mono"
         },
         {
-          "fontFamily": "eina, sans-serif",
-          "name": "Eina",
+          "fontFamily": "eina-regular, sans-serif",
+          "name": "Eina-regular",
           "slug": "eina"
         },
         {
@@ -1409,8 +1409,8 @@
           "slug": "eina-light"
         },
         {
-          "fontFamily": "eina-semi, sans-serif",
-          "name": "Eina-semi",
+          "fontFamily": "eina-semibold, sans-serif",
+          "name": "Eina-semibold",
           "slug": "eina-semi"
         },
         {

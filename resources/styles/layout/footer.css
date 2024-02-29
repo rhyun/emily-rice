@@ -1,7 +1,11 @@
 .footer-nav {
-  @apply m-0 p-0;
+  @apply m-0 p-0 list-none flex gap-4;
+}
+
+.footer-nav li {
+  @apply pl-0 mx-0;
 }
 
 .link-list li a {
-  @apply list-link list-link--dark;
+  @apply list-link list-link--dark text-sm;
 }

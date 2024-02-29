@@ -1,16 +1,21 @@
 <button @postclass('tabs-nav__item js-tabs-nav__item') data-tab-id="post-id-@php the_ID() @endphp">
     <article class="card card-post border-light-gray h-full w-full rounded-2xl border bg-white shadow transition">
-        <section class="card-body prose prose-sm flex max-w-none flex-col p-6 text-left">
-            <header class="">
-                @include('components.item-category-badge')
+        <section class="card-body prose prose-sm flex max-w-none flex-col gap-0 p-6 text-left">
+            <header>
+                <div class="mb-4">
+                    @include('components.item-category-badge')
+                    {{-- @include('components.item-category') --}}
+                </div>
 
-                <h2 class="card-title mt-4 line-clamp-1 text-ellipsis">
-                    @title<span class="accent">.</span></h2>
+                <h2 class="card-title font-eina-semi font-sm my-0 line-clamp-1 text-ellipsis">
+                    @title<span class="">.</span></h2>
             </header>
 
-            @include('components.item-excerpt')
+            <div class="*:line-clamp-2 *:tracking-wide *:m-0 *text-sm mb-6 mt-1">
+                @include('components.item-excerpt')
+            </div>
 
-            <ul class="*:flex *:m-0 *:p-0 *:gap-1 *:items-center not-prose mt-4 flex list-none gap-4 p-0 text-xs">
+            <ul class="*:flex *:gap-1 *:p-0 *:items-center not-prose mt-auto flex list-none gap-0 p-0 text-xs">
                 @hasfield('country')
                 <li>
                     @include('components.item-location')
@@ -21,14 +26,7 @@
                     @include('components.item-location-type')
                 </li>
                 @endfield
-            </ul>
-
-            <ul
-                class="*:flex *:m-0 *:p-0 *:gap-1 *:items-center not-prose m-0 mt-auto flex list-none justify-between gap-4 p-0 text-xs">
-                <li>
-                    @include('components.item-category')
-                </li>
-                <li>
+                <li class="ml-auto">
                     @include('components.item-date')
                 </li>
             </ul>

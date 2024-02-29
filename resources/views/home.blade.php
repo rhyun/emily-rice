@@ -46,16 +46,16 @@
             </x-alert>
         @endnoposts
 
-        <section id="the-list" class="the-list tabs js-tabs wrapper-l h-full w-full bg-white">
-            <div class="wrapper-l h-full px-8 lg:grid lg:grid-cols-12 lg:gap-12">
+        <section id="the-list" class="the-list tabs js-tabs h-full w-full bg-[#FAF9F5]">
+            <div class="wrapper-l lxl:gap-12 h-full xl:grid xl:grid-cols-12 xl:gap-12 2xl:gap-16">
                 @php $counter = 0; @endphp
                 @hasposts
-                    <nav class="tabs-nav js-tabs-nav w-full lg:col-span-4 lg:py-8">
+                    <nav class="tabs-nav js-tabs-nav xl:col-span-5 2xl:col-span-4">
                         {{-- <header class="">
                             All Results
                         </header> --}}
                         <div
-                            class="grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-1 lg:gap-6 2xl:gap-y-8">
+                            class="cards-list mx-auto grid w-full max-w-sm auto-rows-fr grid-cols-1 gap-4 py-4 md:max-w-none md:grid-cols-2 md:gap-8 md:py-8 lg:grid-cols-3 xl:flex xl:flex-col">
 
                             @posts
                                 @php $counter++; @endphp
@@ -81,8 +81,8 @@
                     </nav>
 
                     <section
-                        class="tabs-main w-full bg-white lg:sticky lg:top-0 lg:col-span-8 lg:h-screen lg:border-l lg:border-black">
-                        <div class="tabs-wrapper lg:h-screen lg:overflow-hidden">
+                        class="tabs-main xl:border-light-gray w-full bg-white xl:sticky xl:top-0 xl:col-span-7 xl:h-screen xl:border-l 2xl:col-span-8">
+                        <div class="tabs-wrapper xl:h-screen xl:overflow-hidden">
                             @posts
                                 @include('partials.content-list')
                             @endposts

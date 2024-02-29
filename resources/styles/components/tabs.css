@@ -7,5 +7,5 @@
 }
 
 .tabs-article.is-active {
-  @apply visible fixed left-0 top-0 block w-full opacity-100 h-screen overflow-hidden lg:overflow-visible lg:h-full lg:relative lg:left-auto;
+  @apply visible fixed left-0 top-0 z-50 block w-full opacity-100 h-screen overflow-hidden xl:overflow-visible xl:h-full xl:relative xl:left-auto;
 }

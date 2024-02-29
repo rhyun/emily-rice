@@ -25,9 +25,9 @@ const config = {
           '0 2px 4px -2px rgba(17, 24, 39, .05), 0 4px 8px -2px rgba(17, 24, 39, .07)',
       },
       fontFamily: {
-        eina: ['eina, sans-serif'],
+        eina: ['eina-regular, sans-serif'],
         'eina-light': ['eina-light, sans-serif'],
-        'eina-semi': ['eina-semi, sans-serif'],
+        'eina-semi': ['eina-semibold, sans-serif'],
         'eina-bold': ['eina-bold, sans-serif'],
         'sf-pro': ['SF Pro Display Regular, sans-serif'],
         'sf-bold': ['SF Pro Display Bold, sans-serif'],
@@ -88,7 +88,7 @@ const config = {
           css: {
             color: theme('colors.gray'),
             fontFamily: theme('fontFamily.inter-light'),
-            'h1, h2, h3': {
+            'h1, h2': {
               color: theme('colors.black'),
               fontFamily: theme('fontFamily.eina-bold'),
               margin: 'mt-0',

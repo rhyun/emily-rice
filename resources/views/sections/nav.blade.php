@@ -1,4 +1,4 @@
-<nav class="border-light-gray centered-horizontal bottom-8 z-50 rounded-xl border bg-white shadow-lg">
+<nav class="border-light-gray centered-horizontal bottom-8 z-50 hidden rounded-xl border bg-white shadow-lg">
     <ul class="menu menu-horizontal">
         <li>
             <a>

@@ -17,16 +17,6 @@
 @import '../../node_modules/@glidejs/glide/dist/css/glide.core.min.css';
 @import '../../node_modules/@glidejs/glide/dist/css/glide.theme.min.css';
 
-.wrapper-sm {
-  @apply mx-auto w-full max-w-screen-lg;
-}
-.wrapper {
-  @apply mx-auto w-full max-w-screen-xl;
-}
-.wrapper-l {
-  @apply mx-auto w-full max-w-screen-2xl;
-}
-
 body {
   @apply bg-white;
   background-image: url('../images/bg.png');
@@ -43,7 +33,7 @@ body {
   }
 
   .list-link:before {
-    @apply bg-link absolute -bottom-0.5 left-0 z-[1] h-px w-full origin-[0%_50%] scale-0 duration-300;
+    @apply bg-link absolute -bottom-0.5 left-0 z-[1] h-px md:h-0.5 w-full origin-[0%_50%] scale-0 duration-300;
     content: '';
   }
 
@@ -52,7 +42,7 @@ body {
   }
 
   .list-link:after {
-    @apply bg-link absolute -bottom-0.5 left-0 z-0 h-px w-full;
+    @apply bg-link absolute -bottom-0.5 md:h-0.5 left-0 z-0 h-px w-full;
     content: '';
   }
 
@@ -76,5 +66,18 @@ body {
 
   .centered-none {
     @apply static inset-auto;
+  }
+
+  .wrapper-xs {
+    @apply mx-auto w-full max-w-sm;
+  }
+  .wrapper-sm {
+    @apply mx-auto w-full max-w-screen-md;
+  }
+  .wrapper {
+    @apply mx-auto w-full max-w-sm md:max-w-screen-xl;
+  }
+  .wrapper-l {
+    @apply mx-auto w-10/12 max-w-screen-2xl;
   }
 }
