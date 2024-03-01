@@ -1,0 +1,205 @@
+.list-job input[type='text'],
+.list-job input[type='email'],
+.list-job input[type='tel'],
+.list-job input[type='number'],
+.list-job input[type='url'],
+textarea,
+select {
+  @apply border-2 border-transparent p-2 md:p-4 lg:py-6 xl:py-6 text-white bg-[#99ad99] font-eina-bold placeholder:transition-all focus:placeholder:opacity-0 placeholder:font-eina placeholder:duration-300 placeholder:text-black/[.25] text-lg md:text-xl lg:text-2xl xl:text-3xl leading-none;
+}
+
+/* .input-name input[type='text'] {
+  @apply bg-[url('../images/icon-user.svg')] bg-[right_top_1rem] bg-no-repeat;
+  background-size: 32px 32px;
+} */
+
+.list-job input[type='number'],
+.list-job select {
+  @apply font-eina;
+}
+
+/* Custom Radio Buttons  */
+.list-job .gfield_radio {
+  @apply flex flex-col;
+}
+
+.list-job .gchoice {
+  padding: 2em 0;
+  @apply relative;
+}
+
+.list-job .project-type-radio .gchoice {
+}
+
+.list-job .project-type-radio .gfield_radio {
+  @apply flex-col;
+}
+
+.list-job .gchoice:hover label {
+  @apply text-black;
+}
+
+.list-job .gchoice label {
+  padding: 0 0 0 80px;
+  vertical-align: top;
+  color: rgba(35, 35, 35, 0.2);
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  @apply inline-block relative text-2xl !important;
+}
+
+.list-job input[type='checkbox'],
+.list-job input[type='radio'],
+.list-job label::before {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 0;
+  margin-top: -25px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.list-job input[type='checkbox'],
+.list-job input[type='radio'] {
+  opacity: 0;
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.list-job .gchoice label::before {
+  content: '';
+  border: 4px solid #222222;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.list-job .gfield_radio .gchoice label::before {
+  @apply rounded-full;
+}
+
+.list-job input[type='checkbox']:checked + label,
+.list-job input[type='radio']:checked + label {
+  @apply text-black;
+}
+
+.list-job input[type='checkbox']:checked + label::before,
+.list-job input[type='radio']:checked + label::before {
+  @apply opacity-80;
+}
+
+/* General SVG and path styles */
+.list-job svg {
+  @apply absolute h-10 left-[5px] mt-[-20px] pointer-events-none w-10 top-2/4;
+}
+
+.list-job svg path {
+  stroke: #222222;
+  stroke-width: 13px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.list-job .gform_wrapper {
+  @apply flex flex-col min-h-screen relative bg-[#879f87];
+}
+
+.list-job .gform_heading {
+  @apply w-full mx-auto;
+}
+
+.list-job .gform_title {
+  @apply font-eina-bold centered-horizontal top-9 text-3xl text-white;
+}
+
+/* Progress Bar */
+.list-job .gf_progressbar_wrapper {
+  @apply flex flex-col;
+}
+
+.list-job .gf_progressbar_title {
+  @apply text-white/[0.0] text-right text-3xl font-eina relative order-2 pt-4 pr-6 after:content-['/'] after:text-white/[0.25] after:absolute after:right-14;
+}
+
+.list-job .gf_progressbar_title .gf_step_current_page,
+.list-job .gf_progressbar_title .gf_step_page_count {
+  @apply font-eina-bold text-white/[1];
+}
+
+.list-job .gf_progressbar {
+  @apply order-1;
+}
+
+/* Progress Bar  */
+.gf_progressbar {
+  background: #e8e8e8;
+  position: relative;
+}
+
+.gf_progressbar_percentage {
+  background-color: #0c1014;
+  color: #fff;
+  height: 20.992px;
+  text-align: right;
+  vertical-align: middle;
+  transition: all 1s ease !important;
+}
+
+.gf_progressbar_percentage:not(.percentbar_100) {
+}
+
+.gf_progressbar_percentage span {
+  display: block;
+  float: right;
+  font-size: 13px;
+  line-height: 21px;
+  margin-left: 8px;
+  margin-right: 8px;
+  min-width: 2em;
+  width: auto;
+}
+
+.list-job form {
+  @apply grow flex flex-col w-full relative;
+}
+
+.list-job .gform-body {
+  @apply my-auto;
+}
+
+.list-job .gform_page_fields {
+  @apply max-w-4xl w-full mx-auto;
+}
+
+.list-job .gfield_label {
+  @apply font-eina text-lg md:text-xl lg:text-2xl text-white;
+}
+
+.list-job .gfield_validation_message {
+  @apply left-0 top-0;
+}
+
+.list-job .ginput_container_textarea {
+  @apply rounded overflow-hidden;
+}
+
+.list-job .ginput_container_textarea .wp-editor-container {
+  @apply p-4 border-none bg-[#99ad99];
+}
+
+.list-job .gform_page_footer {
+  @apply flex mt-auto md:mt-0 mx-auto w-full max-w-4xl;
+}
+
+.list-job .gform_next_button,
+.list-job input[type='submit'] {
+  @apply btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary ml-auto font-eina;
+}
+
+.list-job .gform_previous_button {
+  @apply btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-ghost mr-auto font-eina;
+}

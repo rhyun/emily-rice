@@ -1,13 +1,11 @@
-.gfield input[type='text'],
-.gfield input[type='email'],
-.gfield input[type='tel'],
-.gfield input[type='number'],
-.gfield input[type='url'],
-.gfield textarea {
-  @apply border-light-gray bg-white rounded w-full py-0 px-4 h-12 leading-none;
-}
-
-.ginput_container {
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+input[type='url'],
+textarea,
+select {
+  @apply border-light-gray bg-white rounded w-full py-0 px-4 leading-none placeholder:transition-all focus:placeholder:opacity-0;
 }
 
 input[type='button'],
@@ -20,16 +18,12 @@ input[type='submit'] {
   @apply relative pb-8;
 }
 
-.gfield_label {
+.footer-newsletter .gfield_label {
   @apply absolute left-4 top-2.5 transition-all duration-300;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* .gfield_label:after {
-  content: '';
-} */
-
-.gfield:focus-within .gfield_label {
+.footer-newsletter .gfield:focus-within .gfield_label {
   @apply text-sm -translate-y-5;
 }
 
@@ -40,7 +34,7 @@ input[type='submit'] {
 }
 
 .gfield_validation_message {
-  @apply absolute left-4;
+  @apply absolute bottom-0 left-4;
 }
 
 .gfield_error .gfield_validation_message,
