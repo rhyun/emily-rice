@@ -1,10 +1,10 @@
 <article id="post-id-@php the_ID() @endphp" @postclass('tabs-article js-tabs-article invisible article h-0 w-full bg-white opacity-0')>
     @include('components.btn-close')
     <section
-        class="prose prose-sm relative flex h-full w-full max-w-none flex-col gap-6 overflow-y-auto py-20 text-[#282a32] xl:pl-24 2xl:pl-32">
-        <header class="article-header wrapper">
+        class="prose prose-sm relative flex h-full w-full max-w-none flex-col gap-6 overflow-y-auto py-20 text-[#282a32] xl:px-24 2xl:pl-32 2xl:pr-24">
+        <header class="article-header wrapper-sm max-w-sm">
             <div class="mb-4">
-                @include('components.item-category-badge')
+                {{-- @include('components.item-category-badge') --}}
                 {{-- @include('components.item-category') --}}
             </div>
 
@@ -12,20 +12,27 @@
                 @title<span class="accent">.</span>
             </h1>
 
-            <ul class="*:flex *:items-center *:gap-1 *p-0 *:text-sm flex list-none items-center gap-5 p-0">
-                <li class="">@include('components.item-location')</li>
-                @hasfield('location_type')
+            <ul
+                class="*:p-0 *:flex *:items-center *:gap-2 *:my-0 *:text-sm border-light-gray *:xl:text-base flex items-center gap-5 border-y p-0 py-4">
                 <li class="">
+                    @include('components.item-category')
+                </li>
+                <li class="">
+                    @include('components.item-location')
+                </li>
+                @hasfield('location_type')
+                <li>
                     @include('components.item-location-type')
                 </li>
                 @endfield
-                <li>@include('components.item-pay-range')</li>
-                <li>@include('components.item-date')</li>
+                <li class="ml-auto">
+                    @include('components.item-date')
+                </li>
             </ul>
 
             @hasfield('project_subtitle')
             <div class="prose">
-                <h2 class="mt-0 text-black">Overview</h2>
+                <h2 class="mt-0 text-black">Overview.</h2>
                 <p class="mt-0">
                     @field('project_subtitle')
                     </p>
@@ -37,16 +44,16 @@
 
         @include('ads.ad-content')
 
-        <article class="wrapper pt-12">
-            <h2 class="mt-0">Job Description</h2>
+        <article class="wrapper-sm pt-12">
+            <h2 class="mt-0">Job Description.</h2>
 
-            <div class="prose prose-sm text-color h-full text-[#282a32]">
+            <div class="prose prose-sm xl:prose-base text-color h-full text-[#282a32]">
                 @content
             </div>
         </article>
-        <div class="sm:wrapper-xs md:wrapper">
+        <footer class="wrapper-sm">
             @include('components.item-pay-range')
             @include('components.item-apply-cta')
-        </div>
+        </footer>
     </section>
 </article>

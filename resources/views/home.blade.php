@@ -5,38 +5,9 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('partials.list-hero')
 
-    <section class="hero min-h-[50vh] bg-white">
-        <div class="wrapper px-8">
-            <div class="hero-content rounded-2xl bg-green-200 text-center">
-                <div class="prose max-w-none">
-                    <h1 class="title">
-                        <span>the</span>
-                        <div class="flex justify-between text-8xl uppercase">
-                            <span>l</span>
-                            <span>i</span>
-                            <span>s</span>
-                            <span>t</span>
-                        </div>
-                    </h1>
-                    {{-- <h1>@include('components.logo-thelist')</h1> --}}
-
-                    <p class="tracking-none py-6 text-lg text-black/[.75]">The List is a global resource created and
-                        maintained by Emily Rice & Co to support the production accounting community. Use TheList to find
-                        your next role or post an open position in the production accounting or production finance
-                        community. Reach out if you are interested -in advertising on TheList.</p>
-                </div>
-            </div>
-
-            <aside class="wrapper-sm grid gap-4 p-4">
-                @include('partials.list-newsletter')
-
-                @include('partials.list-advertise')
-                <aside>
-        </div>
-    </section>
-
-    <div id="container" class="bg-[#EFEFEF]">
+    <div id="container" class="bg-star-gray">
         @include('partials.page-search')
 
         @include('ads.ad-content-full')
@@ -46,8 +17,8 @@
             </x-alert>
         @endnoposts
 
-        <section id="the-list" class="the-list tabs js-tabs h-full w-full bg-[#FAF9F5]">
-            <div class="wrapper-l lxl:gap-12 h-full xl:grid xl:grid-cols-12 xl:gap-12 2xl:gap-16">
+        <section id="the-list" class="the-list tabs js-tabs h-full w-full bg-white">
+            <div class="wrapper-l h-full xl:grid xl:grid-cols-12 xl:gap-12">
                 @php $counter = 0; @endphp
                 @hasposts
                     <nav class="tabs-nav js-tabs-nav xl:col-span-5 2xl:col-span-4">
@@ -91,5 +62,6 @@
                 @endhasposts
             </div>
         </section>
-    </div>
-@endsection
+
+        {{-- @include('partials.list-faq') --}}
+    @endsection

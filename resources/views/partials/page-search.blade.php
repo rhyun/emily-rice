@@ -1,5 +1,5 @@
-<section class="search w-full bg-[#214D53] p-8 md:px-12 md:py-12 lg:px-16 lg:py-16 xl:px-20 xl:py-20">
-    <div class="wrapper">
+<section class="search bg-star-blue w-full">
+    <div class="wrapper-l rounded p-12 xl:p-24">
         @hasoption('settings', 'search_shortcode')
         @shortcode('' . get_field('settings', 'option')['search_shortcode'] . '')
     @else

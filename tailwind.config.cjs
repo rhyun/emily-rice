@@ -4,20 +4,28 @@ const config = {
   theme: {
     extend: {
       colors: {
+        'star-gray': '#F0F0F0',
+        'star-pale-orange': '#FCA59B',
+        'star-orange': '#FC411E',
+        'star-blue': '#0A005A',
+        green: '#25CB4E',
         black: '#222222',
-        gray: '#83838e',
+        gray: '#898989',
+        'dark-gray': '#292a2c',
         'light-gray': '#e5e5e5',
         'medium-gray': '#dfdfdf',
+        silver: '#bbc4d2',
         link: '#bbc4d2',
+        'link-hover': '#050411',
         'link-dark': '#56616a',
-        features: '#251b9e',
+        features: '#0a2b4c',
         documentary: '#f7b14a',
-        pilot: '#f39a8e',
-        unscripted: '#b295ce',
-        scripted: '#85cbda',
-        studio: '#8AD8C0',
-        other: '#9cb7eb',
-        uncategorized: '#7a8793',
+        pilot: '#b7605f',
+        unscripted: '#147a86',
+        scripted: '#5a9ad5',
+        studio: '#0000e2',
+        other: '#ff7639',
+        uncategorized: '#393838',
         error: '#eb7e7f',
       },
       boxShadow: {
@@ -86,7 +94,7 @@ const config = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray'),
+            color: theme('colors.dark-gray'),
             fontFamily: theme('fontFamily.inter-light'),
             'h1, h2': {
               color: theme('colors.black'),

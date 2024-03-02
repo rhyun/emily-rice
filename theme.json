@@ -96,7 +96,7 @@
           "slug": "slate-950"
         },
         {
-          "color": "#83838e",
+          "color": "#898989",
           "name": "Gray",
           "slug": "gray"
         },
@@ -491,59 +491,9 @@
           "slug": "lime-950"
         },
         {
-          "color": "#f0fdf4",
-          "name": "Green 50",
-          "slug": "green-50"
-        },
-        {
-          "color": "#dcfce7",
-          "name": "Green 100",
-          "slug": "green-100"
-        },
-        {
-          "color": "#bbf7d0",
-          "name": "Green 200",
-          "slug": "green-200"
-        },
-        {
-          "color": "#86efac",
-          "name": "Green 300",
-          "slug": "green-300"
-        },
-        {
-          "color": "#4ade80",
-          "name": "Green 400",
-          "slug": "green-400"
-        },
-        {
-          "color": "#22c55e",
-          "name": "Green 500",
-          "slug": "green-500"
-        },
-        {
-          "color": "#16a34a",
-          "name": "Green 600",
-          "slug": "green-600"
-        },
-        {
-          "color": "#15803d",
-          "name": "Green 700",
-          "slug": "green-700"
-        },
-        {
-          "color": "#166534",
-          "name": "Green 800",
-          "slug": "green-800"
-        },
-        {
-          "color": "#14532d",
-          "name": "Green 900",
-          "slug": "green-900"
-        },
-        {
-          "color": "#052e16",
-          "name": "Green 950",
-          "slug": "green-950"
+          "color": "#25cb4e",
+          "name": "Green",
+          "slug": "green"
         },
         {
           "color": "#ecfdf5",
@@ -1301,6 +1251,31 @@
           "slug": "neutral-950"
         },
         {
+          "color": "#f0f0f0",
+          "name": "Star-gray",
+          "slug": "star-gray"
+        },
+        {
+          "color": "#fca59b",
+          "name": "Star-pale-orange",
+          "slug": "star-pale-orange"
+        },
+        {
+          "color": "#fc411e",
+          "name": "Star-orange",
+          "slug": "star-orange"
+        },
+        {
+          "color": "#0a005a",
+          "name": "Star-blue",
+          "slug": "star-blue"
+        },
+        {
+          "color": "#292a2c",
+          "name": "Dark-gray",
+          "slug": "dark-gray"
+        },
+        {
           "color": "#e5e5e5",
           "name": "Light-gray",
           "slug": "light-gray"
@@ -1312,8 +1287,18 @@
         },
         {
           "color": "#bbc4d2",
+          "name": "Silver",
+          "slug": "silver"
+        },
+        {
+          "color": "#bbc4d2",
           "name": "Link",
           "slug": "link"
+        },
+        {
+          "color": "#050411",
+          "name": "Link-hover",
+          "slug": "link-hover"
         },
         {
           "color": "#56616a",
@@ -1321,7 +1306,7 @@
           "slug": "link-dark"
         },
         {
-          "color": "#251b9e",
+          "color": "#0a2b4c",
           "name": "Features",
           "slug": "features"
         },
@@ -1331,32 +1316,32 @@
           "slug": "documentary"
         },
         {
-          "color": "#f39a8e",
+          "color": "#b7605f",
           "name": "Pilot",
           "slug": "pilot"
         },
         {
-          "color": "#b295ce",
+          "color": "#147a86",
           "name": "Unscripted",
           "slug": "unscripted"
         },
         {
-          "color": "#85cbda",
+          "color": "#5a9ad5",
           "name": "Scripted",
           "slug": "scripted"
         },
         {
-          "color": "#8ad8c0",
+          "color": "#0000e2",
           "name": "Studio",
           "slug": "studio"
         },
         {
-          "color": "#9cb7eb",
+          "color": "#ff7639",
           "name": "Other",
           "slug": "other"
         },
         {
-          "color": "#7a8793",
+          "color": "#393838",
           "name": "Uncategorized",
           "slug": "uncategorized"
         }

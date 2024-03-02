@@ -6,4 +6,4 @@
     </svg> --}}
 </span>
 
-(@field('location_type'))
+@field('location_type')

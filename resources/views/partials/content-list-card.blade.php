@@ -1,10 +1,11 @@
 <button @postclass('tabs-nav__item js-tabs-nav__item') data-tab-id="post-id-@php the_ID() @endphp">
-    <article class="card card-post border-light-gray h-full w-full rounded-2xl border bg-white shadow transition">
+    <article
+        class="card card-post border-light-gray group h-full w-full rounded-2xl border bg-white shadow transition hover:border-[#776EA7]">
         <section class="card-body prose prose-sm flex max-w-none flex-col gap-0 p-6 text-left">
             <header>
-                <div class="mb-4">
-                    @include('components.item-category-badge')
-                    {{-- @include('components.item-category') --}}
+                <div class="relative mb-2 flex items-center justify-between">
+                    @include('components.item-category')
+                    @include('components.item-see-listing')
                 </div>
 
                 <h2 class="card-title font-eina-semi font-sm my-0 line-clamp-1 text-ellipsis">

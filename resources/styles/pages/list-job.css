@@ -5,7 +5,7 @@
 .list-job input[type='url'],
 textarea,
 select {
-  @apply border-2 border-transparent p-2 md:p-4 lg:py-6 xl:py-6 text-white bg-[#99ad99] font-eina-bold placeholder:transition-all focus:placeholder:opacity-0 placeholder:font-eina placeholder:duration-300 placeholder:text-black/[.25] text-lg md:text-xl lg:text-2xl xl:text-3xl leading-none;
+  @apply border-2 border-transparent p-2 md:p-4 lg:py-6 xl:py-6 text-white bg-white/[.35] font-eina-bold placeholder:transition-all focus:placeholder:opacity-0 placeholder:font-eina placeholder:duration-300 placeholder:text-black/[.25] text-lg md:text-xl lg:text-2xl xl:text-3xl leading-none;
 }
 
 /* .input-name input[type='text'] {
@@ -42,7 +42,7 @@ select {
 .list-job .gchoice label {
   padding: 0 0 0 80px;
   vertical-align: top;
-  color: rgba(35, 35, 35, 0.2);
+  color: rgba(255, 255, 255, 0.665);
   cursor: pointer;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -105,7 +105,7 @@ select {
 }
 
 .list-job .gform_wrapper {
-  @apply flex flex-col min-h-screen relative bg-[#879f87];
+  @apply flex flex-col min-h-screen relative bg-[#3b3f45];
 }
 
 .list-job .gform_heading {
@@ -175,12 +175,16 @@ select {
   @apply max-w-4xl w-full mx-auto;
 }
 
+.list-job .gfield {
+  @apply xl:mb-12;
+}
+
 .list-job .gfield_label {
   @apply font-eina text-lg md:text-xl lg:text-2xl text-white;
 }
 
 .list-job .gfield_validation_message {
-  @apply left-0 top-0;
+  @apply left-0 bottom-0;
 }
 
 .list-job .ginput_container_textarea {
@@ -202,4 +206,8 @@ select {
 
 .list-job .gform_previous_button {
   @apply btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-ghost mr-auto font-eina;
+}
+
+.gfield--type-section {
+  @apply hidden;
 }

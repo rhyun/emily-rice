@@ -23,6 +23,14 @@ input[type='submit'] {
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.mail-chimp input[type='text'],
+.mail-chimp input[type='email'],
+.mail-chimp input[type='tel'],
+.mail-chimp input[type='number'],
+.mail-chimp input[type='url'] {
+  @apply h-12;
+}
+
 .footer-newsletter .gfield:focus-within .gfield_label {
   @apply text-sm -translate-y-5;
 }

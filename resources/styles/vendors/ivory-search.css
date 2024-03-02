@@ -29,3 +29,7 @@
 .search .is-form-style .is-search-submit path {
   @apply fill-white;
 }
+
+.search .is-form-style.is-form-style-3.is-ajax-search input.is-search-input {
+  @apply bg-white/[.5];
+}
