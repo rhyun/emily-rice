@@ -1,4 +1,4 @@
-<a class="list-link list-link--primary" href="/list-a/job/">
+<a class="link link--primary" href="/list-a/job/">
     List a Job
 
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"

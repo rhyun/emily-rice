@@ -1,59 +1,64 @@
-<section class="hero min-h-[50vh] bg-white xl:min-h-[65vh]">
-    <div class="wrapper mx-auto w-full px-8">
-        <div class="hero-content prose max-w-none lg:grid lg:grid-cols-12">
-            <article
-                class="border-light-gray border-b-4 border-dotted lg:col-span-8 lg:gap-8 lg:border-b-0 lg:border-r-4 lg:px-8 lg:py-4 xl:px-16 xl:py-12">
-                <header class="">
-                    <h1 class="hero-title font-circular-bold mb-0 block">
-                        <span class="before:content relative flex items-center gap-2 text-base uppercase">
-                            <span class="border-light-gray grow border-t-2 border-dashed"></span>
-                            Welcome to
-                            <span class="border-light-gray grow border-t-2 border-dashed"></span>
+<section class="hero flex min-h-screen flex-col bg-white md:min-h-[50vh] xl:min-h-[65vh]">
+    <div class="hero-main wrapper prose max-w-none px-8">
+        <article class="">
+            <header class="flex flex-col py-10">
+                {{-- <div class="relative flex items-center gap-2">
+                    <span class="text-light-gray h-5 w-5">
+                        @include('icons.icon-tassle')
+                    </span>
+                    <p
+                        class="after:border-light-gray before:border-light-gray m-0 flex grow items-center gap-2 before:block before:grow before:border-t-2 before:border-dashed after:block after:grow after:border-t-2 after:border-dashed">
+                        <span class="flex flex-col items-center text-xs">
+                            <span class="font-circular-bold uppercase" data-shadow='Emily Rice'>Emily
+                                Rice </span>
+                            <span>Presents</span>
                         </span>
-                        <div class="hero-title__text flex justify-between text-8xl uppercase lg:text-[425%]">
-                            <span>The</span>
-                            <span class="">l</span>
-                            <span>i</span>
-                            <span>s</span>
-                            <span>t</span>
-                        </div>
-                    </h1>
-
-                    <p class="font-eina-semi flex flex-col text-center"><span class="italic">By</span> <span
-                            class="text-[#00b6b4]">Emily
-                            Rice</span>
                     </p>
-                </header>
+                    <span class="text-light-gray h-5 w-5 rotate-180">
+                        @include('icons.icon-tassle')
+                    </span>
+                </div> --}}
 
-                <section class="">
-                    <p class="tracking-none text-black/[.75]">The List is a global resource created and maintained
+                <h1
+                    class="font-circular-black *:text-[200%] *:lg:text-[425%] mb-0 flex flex-col items-center gap-3 uppercase lg:flex-row lg:gap-12">
+                    <div class="hero-title__text ml-auto">
+                        <span>T</span>
+                        <span>h</span>
+                        <span>e</span>
+                    </div>
+                    <div class="hero-title__text mr-auto">
+                        <span>L</span>
+                        <span>i</span>
+                        <span>s</span>
+                        <span>t</span>
+                        <span class="text-orange">.</span>
+                    </div>
+                </h1>
+            </header>
+
+            <section class="py-6 xl:col-span-4 xl:px-8 2xl:pl-16">
+                <article>
+                    <p>TheList is a global resource created and maintained
                         by Emily Rice & Co to support the production accounting community.</p>
 
                     <p>Use TheList to find your next role or post an open position in the production accounting or
                         production finance community.</p>
-                </section>
-            </article>
 
-            {{-- <h1>@include('components.logo-thelist')</h1> --}}
-            <aside class="py-6 lg:col-span-4 lg:px-8 xl:pl-16">
-                <article class="">
-                    <p class="tracking-none text-black/[.75]">The List is a global resource created and maintained
-                        by Emily Rice & Co to support the production accounting community.</p>
+                    <div class="">
+                        <h3>Looking to post a job?</h3>
 
-                    <p>Use TheList to find your next role or post an open position in the production accounting or
-                        production finance community.</p>
-
-                    @include('components.cta-list-job')
+                        @include('components.cta-list-job')
+                    </div>
                 </article>
-            </aside>
-        </div>
-        <footer class="wrapper-sm *:grow grid gap-4 p-4 pt-32 lg:flex">
-            <section>
-                @include('partials.list-newsletter')
             </section>
-            <section>
-                @include('partials.list-advertise')
-            </section>
-        </footer>
+        </article>
     </div>
+    <aside class="wrapper grid gap-4 p-4 py-32 xl:grid-cols-2">
+        <section>
+            @include('partials.list-newsletter')
+        </section>
+        <section>
+            @include('partials.list-advertise')
+        </section>
+    </aside>
 </section>

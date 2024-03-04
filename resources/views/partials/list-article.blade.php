@@ -1,11 +1,11 @@
-<article id="post-id-@php the_ID() @endphp" @postclass('tabs-article js-tabs-article invisible article h-0 w-full bg-white opacity-0')>
+<article id="post-id-@php the_ID() @endphp" @postclass('tabs-article js-tabs-article invisible article h-0 w-full bg-white opacity-0 xl:bg-transparent')>
     @include('components.btn-close')
     <section
-        class="prose prose-sm relative flex h-full w-full max-w-none flex-col gap-6 overflow-y-auto py-20 text-[#282a32] xl:px-24 2xl:pl-32 2xl:pr-24">
+        class="prose prose-sm relative flex h-full w-full max-w-none flex-col gap-6 overflow-y-auto py-20 text-[#282a32] xl:px-24 xl:pb-40 2xl:pl-32 2xl:pr-24">
         <header class="article-header wrapper-sm max-w-sm">
             <div class="mb-4">
                 {{-- @include('components.item-category-badge') --}}
-                {{-- @include('components.item-category') --}}
+                @include('components.item-category')
             </div>
 
             <h1 class="mb-0 pb-0">
@@ -47,11 +47,12 @@
         <article class="wrapper-sm pt-12">
             <h2 class="mt-0">Job Description.</h2>
 
-            <div class="prose prose-sm xl:prose-base text-color h-full text-[#282a32]">
+            <div
+                class="prose prose-sm xl:prose-base marker:text-star-orange marker:text-pale-orange h-full first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold first-letter:text-black first-line:uppercase first-line:tracking-widest">
                 @content
             </div>
         </article>
-        <footer class="wrapper-sm">
+        <footer class="wrapper-sm bg-star-blue rounded-xl p-8 text-base text-white">
             @include('components.item-pay-range')
             @include('components.item-apply-cta')
         </footer>

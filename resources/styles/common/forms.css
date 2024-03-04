@@ -5,12 +5,12 @@ input[type='number'],
 input[type='url'],
 textarea,
 select {
-  @apply border-light-gray bg-white rounded w-full py-0 px-4 leading-none placeholder:transition-all focus:placeholder:opacity-0;
+  @apply border-light-gray bg-white rounded w-full px-4 leading-none placeholder:transition-all min-h-12 focus:placeholder:opacity-0;
 }
 
 input[type='button'],
 input[type='submit'] {
-  @apply btn;
+  @apply btn btn-secondary w-full md:w-auto;
 }
 
 /* gfield */
@@ -18,20 +18,12 @@ input[type='submit'] {
   @apply relative pb-8;
 }
 
-.footer-newsletter .gfield_label {
+.gfield_label {
   @apply absolute left-4 top-2.5 transition-all duration-300;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.mail-chimp input[type='text'],
-.mail-chimp input[type='email'],
-.mail-chimp input[type='tel'],
-.mail-chimp input[type='number'],
-.mail-chimp input[type='url'] {
-  @apply h-12;
-}
-
-.footer-newsletter .gfield:focus-within .gfield_label {
+.gfield_label:has(+ .ginput_container input:focus) {
   @apply text-sm -translate-y-5;
 }
 

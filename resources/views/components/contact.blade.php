@@ -1,4 +1,6 @@
- <nav class="contact hidden md:flex md:gap-4 lg:gap-8">
-     @include('components.btn-phone')
-     @include('components.btn-contact')
+ <nav class="contact">
+     <ul class="flex list-none items-center gap-4">
+         <li class="hidden">@include('components.btn-phone')</li>
+         <li>@include('components.btn-contact')</li>
+     </ul>
  </nav>

@@ -5,11 +5,14 @@ const config = {
     extend: {
       colors: {
         'star-gray': '#F0F0F0',
-        'star-pale-orange': '#FCA59B',
-        'star-orange': '#FC411E',
+        'blue-gray': '#DEE0ED',
+        'pale-orange': '#FCA59B',
+        purple: '#5D17EC',
+        orange: '#FC411E',
         'star-blue': '#0A005A',
         green: '#25CB4E',
         black: '#222222',
+        'text-gray': '#8F8F8F',
         gray: '#898989',
         'dark-gray': '#292a2c',
         'light-gray': '#e5e5e5',
@@ -94,11 +97,11 @@ const config = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.dark-gray'),
-            fontFamily: theme('fontFamily.inter-light'),
-            'h1, h2': {
+            color: theme('colors.text-gray'),
+            fontFamily: theme('fontFamily.inter'),
+            'h1, h2, h3': {
               color: theme('colors.black'),
-              fontFamily: theme('fontFamily.eina-bold'),
+              fontFamily: theme('fontFamily.circular-bold'),
               margin: 'mt-0',
             },
             strong: {

@@ -1,6 +1,5 @@
 @hasoption('contact')
-<a class="flex items-center gap-2" href="#">
-    @include('icons.icon-phone')
+<a class="link" href="#">
     @option('contact', 'phone')
     </a>
 @endoption

@@ -1,7 +1,11 @@
 .btn {
-  @apply rounded uppercase font-eina-semi no-underline;
+  @apply uppercase font-circular-med no-underline tracking-widest;
 }
 
 .btn-primary {
-  @apply bg-star-orange text-white border-star-pale-orange hover:opacity-50;
+  @apply bg-orange rounded text-white border-pale-orange hover:opacity-50;
+}
+
+.btn-secondary {
+  @apply bg-star-blue rounded text-white border-blue-gray  hover:opacity-50;
 }

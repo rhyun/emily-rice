@@ -1,6 +1,2 @@
-<p class="font-eina-semi text-2xl">Post Production Accounting Services
-    <br>Los Angeles
-    &
-    New
-    York
-</p>
+<span class="block">Post Production Accounting Services</span>
+<span>Los Angeles <span>&</span> New York</span>

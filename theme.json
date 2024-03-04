@@ -271,59 +271,9 @@
           "slug": "red-950"
         },
         {
-          "color": "#fff7ed",
-          "name": "Orange 50",
-          "slug": "orange-50"
-        },
-        {
-          "color": "#ffedd5",
-          "name": "Orange 100",
-          "slug": "orange-100"
-        },
-        {
-          "color": "#fed7aa",
-          "name": "Orange 200",
-          "slug": "orange-200"
-        },
-        {
-          "color": "#fdba74",
-          "name": "Orange 300",
-          "slug": "orange-300"
-        },
-        {
-          "color": "#fb923c",
-          "name": "Orange 400",
-          "slug": "orange-400"
-        },
-        {
-          "color": "#f97316",
-          "name": "Orange 500",
-          "slug": "orange-500"
-        },
-        {
-          "color": "#ea580c",
-          "name": "Orange 600",
-          "slug": "orange-600"
-        },
-        {
-          "color": "#c2410c",
-          "name": "Orange 700",
-          "slug": "orange-700"
-        },
-        {
-          "color": "#9a3412",
-          "name": "Orange 800",
-          "slug": "orange-800"
-        },
-        {
-          "color": "#7c2d12",
-          "name": "Orange 900",
-          "slug": "orange-900"
-        },
-        {
-          "color": "#431407",
-          "name": "Orange 950",
-          "slug": "orange-950"
+          "color": "#fc411e",
+          "name": "Orange",
+          "slug": "orange"
         },
         {
           "color": "#fffbeb",
@@ -881,59 +831,9 @@
           "slug": "violet-950"
         },
         {
-          "color": "#faf5ff",
-          "name": "Purple 50",
-          "slug": "purple-50"
-        },
-        {
-          "color": "#f3e8ff",
-          "name": "Purple 100",
-          "slug": "purple-100"
-        },
-        {
-          "color": "#e9d5ff",
-          "name": "Purple 200",
-          "slug": "purple-200"
-        },
-        {
-          "color": "#d8b4fe",
-          "name": "Purple 300",
-          "slug": "purple-300"
-        },
-        {
-          "color": "#c084fc",
-          "name": "Purple 400",
-          "slug": "purple-400"
-        },
-        {
-          "color": "#a855f7",
-          "name": "Purple 500",
-          "slug": "purple-500"
-        },
-        {
-          "color": "#9333ea",
-          "name": "Purple 600",
-          "slug": "purple-600"
-        },
-        {
-          "color": "#7e22ce",
-          "name": "Purple 700",
-          "slug": "purple-700"
-        },
-        {
-          "color": "#6b21a8",
-          "name": "Purple 800",
-          "slug": "purple-800"
-        },
-        {
-          "color": "#581c87",
-          "name": "Purple 900",
-          "slug": "purple-900"
-        },
-        {
-          "color": "#3b0764",
-          "name": "Purple 950",
-          "slug": "purple-950"
+          "color": "#5d17ec",
+          "name": "Purple",
+          "slug": "purple"
         },
         {
           "color": "#fdf4ff",
@@ -1256,19 +1156,24 @@
           "slug": "star-gray"
         },
         {
-          "color": "#fca59b",
-          "name": "Star-pale-orange",
-          "slug": "star-pale-orange"
+          "color": "#dee0ed",
+          "name": "Blue-gray",
+          "slug": "blue-gray"
         },
         {
-          "color": "#fc411e",
-          "name": "Star-orange",
-          "slug": "star-orange"
+          "color": "#fca59b",
+          "name": "Pale-orange",
+          "slug": "pale-orange"
         },
         {
           "color": "#0a005a",
           "name": "Star-blue",
           "slug": "star-blue"
+        },
+        {
+          "color": "#8f8f8f",
+          "name": "Text-gray",
+          "slug": "text-gray"
         },
         {
           "color": "#292a2c",

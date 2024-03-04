@@ -6,6 +6,6 @@
   @apply pl-0 mx-0;
 }
 
-.link-list li a {
-  @apply list-link list-link--dark  text-sm;
+.footer-nav li a {
+  @apply link text-sm;
 }
