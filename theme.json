@@ -1166,6 +1166,11 @@
           "slug": "pale-orange"
         },
         {
+          "color": "#e9be7a",
+          "name": "Dark-orange",
+          "slug": "dark-orange"
+        },
+        {
           "color": "#0a005a",
           "name": "Star-blue",
           "slug": "star-blue"
@@ -1211,7 +1216,7 @@
           "slug": "link-dark"
         },
         {
-          "color": "#0a2b4c",
+          "color": "#66bea4",
           "name": "Features",
           "slug": "features"
         },
@@ -1221,27 +1226,27 @@
           "slug": "documentary"
         },
         {
-          "color": "#b7605f",
+          "color": "#eb6766",
           "name": "Pilot",
           "slug": "pilot"
         },
         {
-          "color": "#147a86",
+          "color": "#66bea4",
           "name": "Unscripted",
           "slug": "unscripted"
         },
         {
-          "color": "#5a9ad5",
+          "color": "#5e5eb1",
           "name": "Scripted",
           "slug": "scripted"
         },
         {
-          "color": "#0000e2",
+          "color": "#22aae2",
           "name": "Studio",
           "slug": "studio"
         },
         {
-          "color": "#ff7639",
+          "color": "#fbd731",
           "name": "Other",
           "slug": "other"
         },
@@ -1459,11 +1464,6 @@
           "slug": "inter-black"
         },
         {
-          "fontFamily": "circular_med",
-          "name": "Circular_med",
-          "slug": "circular"
-        },
-        {
           "fontFamily": "larsseitbold",
           "name": "Larsseitbold",
           "slug": "larsseit-bold"
@@ -1537,6 +1537,21 @@
           "fontFamily": "poppinssemibold",
           "name": "Poppinssemibold",
           "slug": "poppins-semi"
+        },
+        {
+          "fontFamily": "fk_roman_standard",
+          "name": "Fk_roman_standard",
+          "slug": "fk-roman"
+        },
+        {
+          "fontFamily": "fk_roman_standard_thin",
+          "name": "Fk_roman_standard_thin",
+          "slug": "fk-roman-thin"
+        },
+        {
+          "fontFamily": "fk_roman_standard_light",
+          "name": "Fk_roman_standard_light",
+          "slug": "fk-roman-light"
         }
       ],
       "fontSizes": [

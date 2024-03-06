@@ -3,9 +3,17 @@
 }
 
 .btn-primary {
-  @apply bg-orange rounded text-white border-pale-orange hover:opacity-50;
+  @apply bg-orange text-white border-pale-orange hover:bg-orange hover:border-pale-orange relative rounded z-[1] 2xl:btn-lg;
 }
 
-.btn-secondary {
-  @apply bg-star-blue rounded text-white border-blue-gray  hover:opacity-50;
+.btn-primary:before {
+  @apply bg-[#cf3d3d] content-[''] absolute left-0 top-0 scale-x-0 h-full w-full -z-[1] duration-300 origin-left ease-in-out;
+}
+
+.btn-primary:hover:before {
+  @apply transform-none delay-100 origin-left scale-x-100;
+}
+
+.btn-input {
+  @apply bg-purple border-transparent text-white rounded  hover:opacity-75 hover:bg-purple hover:border-transparent duration-300;
 }

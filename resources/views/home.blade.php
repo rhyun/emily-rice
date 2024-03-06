@@ -7,7 +7,7 @@
 @section('content')
     @include('partials.list-hero')
 
-    <div id="container" class="bg-star-gray">
+    <div id="container" class="bg-blue-gray">
         @include('partials.page-search')
 
         @include('ads.ad-content-full')
@@ -17,8 +17,9 @@
             </x-alert>
         @endnoposts
 
-        <section id="the-list" class="the-list tabs js-tabs bg-star-gray h-full w-full">
-            <div class="wrapper-l h-full bg-white xl:mb-12 xl:grid xl:grid-cols-12 xl:gap-12 xl:rounded-b-2xl">
+        <section id="the-list" class="the-list tabs js-tabs xl:bg-blue-gray h-full w-full bg-white">
+            <div
+                class="wrapper-l h-full bg-white xl:mb-12 xl:grid xl:grid-cols-12 xl:gap-12 xl:rounded-b-2xl xl:shadow-[0_0px_120px_rgba(0,0,0,0.15)]">
                 @php $counter = 0; @endphp
                 @hasposts
                     <nav class="tabs-nav js-tabs-nav py-14 xl:col-span-5 xl:pl-12 2xl:col-span-4">

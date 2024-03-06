@@ -2,7 +2,7 @@
   @apply wrapper-xs;
 }
 .nav-links {
-  @apply flex items-center mt-14 z-10 gap-8 justify-center transition-opacity duration-300;
+  @apply flex items-center mt-14 z-10 gap-6 justify-center transition-opacity duration-300;
 }
 
 .nav-links a.page-numbers {
@@ -10,7 +10,7 @@
 }
 
 .nav-links .page-numbers.dots {
-  @apply btn bg-transparent border-transparent shadow-none px-0 btn-disabled w-auto;
+  @apply btn bg-transparent border-transparent shadow-none px-0 btn-disabled w-auto hidden;
 }
 .nav-links .current {
   @apply btn btn-circle bg-star-blue border-transparent text-white;
@@ -20,10 +20,10 @@
   @apply mr-auto;
 }
 
-.nav-links .page-numbers.prev {
+.nav-links .prev {
   @apply mr-auto;
 }
 
-.nav-links .page-numbers.next {
+.nav-links .next {
   @apply ml-auto;
 }

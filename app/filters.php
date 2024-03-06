@@ -92,7 +92,7 @@ add_filter('the_posts_pagination_args', function ($args) {
     $args['mid_size']  = 1; // Adjust this to show fewer or more pages around the current page
 
     // Number of page links at the start and end of the pagination
-    $args['end_size']  = 1; // Adjust this to show fewer or more pages at the ends
+    $args['end_size']  = 0; // Adjust this to show fewer or more pages at the ends
 
     // Previous and Next link texts
     $args['prev_text'] = __('<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">

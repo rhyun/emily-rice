@@ -10,12 +10,12 @@ select {
 
 input[type='button'],
 input[type='submit'] {
-  @apply btn btn-secondary w-full md:w-auto;
+  @apply btn btn-input w-full md:w-auto;
 }
 
 /* gfield */
 .gfield {
-  @apply relative pb-8;
+  @apply relative pb-9;
 }
 
 .gfield_label {
@@ -34,7 +34,7 @@ input[type='submit'] {
 }
 
 .gfield_validation_message {
-  @apply absolute bottom-0 left-4;
+  @apply absolute bottom-1 left-4;
 }
 
 .gfield_error .gfield_validation_message,
@@ -51,8 +51,46 @@ input[type='submit'] {
   @apply border-error;
 }
 
+.gform_ajax_spinner {
+  @apply hidden;
+}
+
+.contact-advertisement .gfield_label,
+.newsletter .gfield_label {
+  @apply text-silver hidden;
+}
+
+.contact-advertisement .gform_footer,
+.newsletter .gform_footer {
+  @apply mt-2 md:mt-0;
+}
+
+.contact-advertisement .gform_confirmation_message,
+.newsletter .gform_confirmation_message {
+  @apply text-white text-center w-full;
+}
+
+.contact-advertisement textarea {
+  @apply pt-5;
+}
+
+.contact-advertisement input[type='text'],
+.contact-advertisement input[type='email'],
+.contact-advertisement textarea,
+.newsletter input[type='text'],
+.newsletter input[type='email'] {
+  @apply bg-white/30 border-transparent text-white focus:ring-transparent placeholder:text-white;
+}
+
+.contact-advertisement .gfield_error input[type='text'],
+.contact-advertisement .gfield_error textarea,
+.newsletter .gfield_error input[type='text'],
+.newsletter .gfield_error input[type='email'] {
+  @apply placeholder:text-error;
+}
+
 .footer-newsletter {
-  @apply lg:flex lg:gap-4;
+  @apply min-h-20 lg:flex lg:gap-4;
 }
 
 .footer-newsletter .gform-body {
@@ -69,4 +107,30 @@ input[type='submit'] {
 
 .footer-newsletter .gfield {
   @apply lg:grow;
+}
+
+.footer-newsletter .gfield_label {
+  @apply text-silver hidden;
+}
+
+.footer-newsletter .gfield_error .gfield_label {
+  @apply text-error;
+}
+
+.footer-newsletter .gfield_error input[type='text'],
+.footer-newsletter .gfield_error input[type='email'] {
+  @apply placeholder:text-error;
+}
+
+.footer-newsletter input[type='text'],
+.footer-newsletter input[type='email'] {
+  @apply bg-white/30 border-transparent text-white focus:ring-transparent placeholder:text-white;
+}
+
+.footer-newsletter .gform_footer {
+  @apply mt-2 md:mt-0;
+}
+
+.footer-newsletter .gform_confirmation_message {
+  @apply text-white text-center w-full;
 }

@@ -1,29 +1,41 @@
-.cards-list .post-cat {
-  @apply bg-uncategorized;
-}
-.category-documentary .post-cat {
-  @apply bg-documentary;
-}
-.category-features .post-cat {
-  @apply bg-features;
-}
-.category-pilot .post-cat {
-  @apply bg-pilot;
-}
-.category-unscripted .post-cat {
-  @apply bg-unscripted;
-}
-.category-studio-finance .post-cat {
-  @apply bg-studio;
-}
-.category-other .post-cat,
-.category-other .accent {
-  @apply bg-other;
-}
-.category-scripted-series .post-cat {
-  @apply bg-scripted;
+.is-active .card {
+  @apply border-star-blue;
+  box-shadow: rgba(33, 33, 33, 0.25) 0px 6px 10px;
 }
 
+.card {
+  box-shadow: rgba(33, 33, 33, 0.1) 0px 4px 9px;
+}
+
+.card:hover {
+  box-shadow: rgba(33, 33, 33, 0.25) 0px 6px 10px;
+}
+
+.post-cat {
+  @apply relative;
+}
+.category-documentary .hdr-cat:before {
+  @apply bg-documentary;
+}
+.category-features .hdr-cat:before {
+  @apply bg-features;
+}
+.category-pilot .hdr-cat:before {
+  @apply bg-pilot;
+}
+.category-unscripted .hdr-cat:before {
+  @apply bg-unscripted;
+}
+.category-studio-finance .hdr-cat:before {
+  @apply bg-studio;
+}
+.category-other .hdr-cat:before {
+  @apply bg-other;
+}
+.category-scripted-series .hdr-cat:before {
+  @apply bg-scripted;
+}
+/* 
 .post-cat-badge {
   @apply bg-uncategorized;
 }
@@ -48,4 +60,4 @@
 }
 .category-scripted-series .post-cat-badge {
   @apply bg-scripted/[.75];
-}
+} */

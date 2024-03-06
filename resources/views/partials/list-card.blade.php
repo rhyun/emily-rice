@@ -1,22 +1,22 @@
 <button @postclass('tabs-nav__item js-tabs-nav__item') data-tab-id="post-id-@php the_ID() @endphp">
     <article
-        class="card card-post border-light-gray shadow-card group h-full w-full rounded-2xl border bg-white transition hover:border-[#776EA7]">
+        class="card card-post border-light-gray h-full w-full rounded-2xl border-2 bg-white transition hover:border-[#c6c2db]">
         <section class="card-body prose prose-sm flex max-w-none flex-col gap-0 p-6 text-left">
             <header>
-                <div class="relative mb-2 flex items-center justify-between">
+                <div class="relative my-2 mb-2 flex items-center justify-between">
                     @include('components.item-category')
-                    {{-- @include('components.item-see-listing') --}}
                 </div>
+                <h2 class="card-title font-circular-med my-0 line-clamp-2 text-ellipsis text-xl">
+                    @title<span>.</span></h2>
 
-                <h2 class="card-title my-0 line-clamp-2 text-ellipsis text-xl tracking-tighter">
-                    @title<span class="">.</span></h2>
+                <span class="spacer bg-light-gray my-4 block h-1 w-6 rounded-sm"></span>
             </header>
 
-            <div class="*:line-clamp-2 *:tracking-wide *:m-0 *text-sm mb-6 mt-1">
+            <div class="*:line-clamp-2 *:tracking-wide *:m-0 *text-sm mb-6">
                 @include('components.item-excerpt')
             </div>
 
-            <ul class="*:flex *:gap-1 *:p-0 *:items-center not-prose mt-auto flex list-none flex-wrap gap-2 p-0 text-xs">
+            <ul class="*:flex *:gap-1 *:p-0 *:items-center not-prose mt-auto flex flex-wrap gap-2 p-0 text-xs">
                 @hasfield('country')
                 <li>
                     @include('components.item-location')
@@ -28,11 +28,12 @@
                 </li>
                 @endfield
             </ul>
-            <ul class="*:flex *:gap-1 *:p-0 *:items-center not-prose mt-auto flex list-none flex-wrap gap-2 p-0 text-xs">
+            <footer
+                class="*:flex *:gap-1 *:p-0 *:items-center not-prose mt-6 flex list-none flex-wrap gap-2 p-0 text-xs">
                 <li class="ml-auto">
                     @include('components.item-date')
                 </li>
-            </ul>
+            </footer>
         </section>
     </article>
 </button>
