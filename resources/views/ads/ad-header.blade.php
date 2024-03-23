@@ -1,6 +1,6 @@
 @hasoption('top_header_toggle')
     @options('top_header')
-        <div class="border-light-gray border-b px-4 py-2 md:p-4 lg:p-8">
+        <div class="top-header border-light-gray hidden border-b px-4 py-2 md:p-4 lg:p-8">
             <div class="wrapper">
                 @hassub('ad_link')<a href="@sub('ad_link')
 " target="_blank">

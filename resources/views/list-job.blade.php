@@ -24,8 +24,8 @@
             @include('components.logo')
         </header> --}}
 
-        <div id="main" class="main grow">
-            <div class="fixed left-4 top-9 z-10">
+        <div id="main" class="main relative grow">
+            <div class="absolute left-4 top-9 z-10">
                 @include('components.btn-back')
             </div>
             @while (have_posts())

@@ -100,7 +100,7 @@ const config = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.text-gray'),
+            color: theme('colors.text-dark-gray'),
             fontFamily: theme('fontFamily.inter-light'),
             'h1, h2, h3': {
               color: theme('colors.black'),

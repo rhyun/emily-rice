@@ -5,17 +5,16 @@
 .list-job input[type='url'],
 .list-job textarea,
 .list-job select {
-  @apply border-2 border-transparent p-2 md:p-4 lg:py-6 xl:py-6 text-white bg-white/[.35] font-eina-bold placeholder:transition-all focus:placeholder:opacity-0 placeholder:font-eina placeholder:duration-300 placeholder:text-black/[.25] text-lg md:text-xl lg:text-2xl xl:text-3xl leading-none;
+  @apply border-2 border-transparent p-2 md:p-4 lg:py-6 xl:py-6 text-black bg-white/[.35] font-eina-bold placeholder:transition-all focus:placeholder:opacity-0 placeholder:font-eina placeholder:duration-300 placeholder:text-black/[.75] text-lg md:text-xl lg:text-2xl xl:text-3xl leading-none focus:ring-transparent;
 }
-
-/* .input-name input[type='text'] {
-  @apply bg-[url('../images/icon-user.svg')] bg-[right_top_1rem] bg-no-repeat;
-  background-size: 32px 32px;
-} */
 
 .list-job input[type='number'],
 .list-job select {
   @apply font-eina;
+}
+
+.list-job .gform_page {
+  @apply px-8;
 }
 
 /* Custom Radio Buttons  */
@@ -105,7 +104,7 @@
 }
 
 .list-job .gform_wrapper {
-  @apply flex flex-col min-h-screen relative bg-[#3b3f45];
+  @apply flex flex-col min-h-screen relative bg-[#E9BE7A];
 }
 
 .list-job .gform_heading {
@@ -136,31 +135,23 @@
 
 /* Progress Bar  */
 .gf_progressbar {
-  background: #e8e8e8;
-  position: relative;
+  @apply bg-white/75 relative;
 }
 
 .gf_progressbar_percentage {
-  background-color: #0c1014;
-  color: #fff;
+  @apply text-right align-middle transition text-white bg-black;
   height: 20.992px;
-  text-align: right;
-  vertical-align: middle;
-  transition: all 1s ease !important;
 }
 
 .gf_progressbar_percentage:not(.percentbar_100) {
 }
 
 .gf_progressbar_percentage span {
-  display: block;
-  float: right;
-  font-size: 13px;
-  line-height: 21px;
+  @apply block float-right text-sm w-auto;
+
   margin-left: 8px;
   margin-right: 8px;
   min-width: 2em;
-  width: auto;
 }
 
 .list-job form {
@@ -180,7 +171,16 @@
 }
 
 .list-job .gfield_label {
-  @apply font-eina text-lg md:text-xl lg:text-2xl text-white;
+  @apply font-eina static text-lg md:text-xl lg:text-2xl text-white;
+}
+
+.gfield_label {
+  @apply absolute left-4 top-2.5 transition-all duration-300;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.list-job .gfield_label:has(+ .ginput_container input:focus) {
+  @apply text-lg md:text-xl translate-y-0;
 }
 
 .list-job .gfield_validation_message {
@@ -201,11 +201,11 @@
 
 .list-job .gform_next_button,
 .list-job input[type='submit'] {
-  @apply btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary ml-auto font-eina;
+  @apply btn sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary ml-auto font-eina;
 }
 
 .list-job .gform_previous_button {
-  @apply btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-ghost mr-auto font-eina;
+  @apply btn  sm:btn-sm md:btn-md lg:btn-lg btn-ghost mr-auto font-eina;
 }
 
 .gfield--type-section {

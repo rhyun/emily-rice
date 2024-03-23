@@ -1,1 +1,19 @@
+.search .is-search-form {
+  @apply relative;
+}
 
+.search input[type='search'] {
+  @apply bg-transparent w-full border-t-0 border-l-0 border-r-0 border-b border-white text-white py-8 pl-8 pr-16 focus:ring-transparent xl:text-xl placeholder:transition-all focus:placeholder:opacity-0 placeholder:text-silver;
+}
+
+.search .is-search-submit {
+  @apply btn btn-circle right-0 bg-white centered-vertical xl:w-16 xl:h-16;
+}
+
+.is-screen-reader-text {
+  @apply hidden opacity-0 w-0 h-0;
+}
+
+.search .is-highlight {
+  @apply bg-pale-orange text-white !important;
+}

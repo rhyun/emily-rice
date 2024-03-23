@@ -31,6 +31,7 @@
     }
 
     .btn-list-job .circle {
+        @apply bg-star-blue;
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: relative;
         display: block;

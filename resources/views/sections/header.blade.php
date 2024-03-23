@@ -12,17 +12,16 @@
         @endif --}}
         </div>
         <div class="navbar-center">
-            {{-- <p class="text-sm">{{ get_bloginfo('description', 'display') }}</p> --}}
-            <p class="font-circular-med m-0 hidden text-center uppercase tracking-widest lg:block">
+            <p class="font-circular-bold m-0 hidden text-center text-2xl text-black lg:block">
                 @include('components.tagline')
             </p>
         </div>
         <div class="navbar-end pr-2">
-            <div class="hidden lg:block">
+            <div class="">
                 @include('components.contact')
             </div>
 
-            <div class="lg:hidden">
+            <div class="hidden">
                 @include('components.btn-menu')
             </div>
         </div>

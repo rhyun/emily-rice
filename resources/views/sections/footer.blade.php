@@ -1,10 +1,10 @@
 <footer class="prose border-light-gray w-full max-w-none border-t bg-white">
     <section class="wrapper-l w-full">
-        <div class="wrapper flex flex-col gap-14 px-6 placeholder:justify-between md:flex-row md:gap-24 lg:py-24">
+        <div class="wrapper flex flex-col gap-14 px-6 py-8 placeholder:justify-between md:flex-row md:gap-24 md:py-24">
             <aside>
                 @include('components.logo-footer')
 
-                <p class="mt-4 text-lg">
+                <p class="mt-4 text-lg text-black">
                     @include('components.tagline')
                 </p>
 

@@ -14,6 +14,35 @@
   @apply transform-none delay-100 origin-left scale-x-100;
 }
 
+.btn-secondary {
+  @apply bg-star-blue text-white shadow hover:shadow-md border-star-gray hover:bg-star-blue hover:border-star-gray relative rounded z-[1] 2xl:btn-lg;
+}
+
+.btn-secondary:before {
+  @apply bg-purple content-[''] absolute left-0 top-0 scale-x-0 h-full w-full -z-[1] duration-300 origin-left ease-in-out;
+}
+
+.btn-secondary:hover:before {
+  @apply transform-none delay-100 origin-left scale-x-100;
+}
+
+.btn-accent {
+  @apply bg-transparent text-black shadow hover:shadow-md border-star-blue hover:bg-star-blue hover:border-star-gray relative rounded z-[1] 2xl:btn-lg;
+}
+
+.btn-accent:before {
+  @apply bg-purple content-[''] absolute left-0 top-0 scale-x-0 h-full w-full -z-[1] duration-300 origin-left ease-in-out;
+}
+
+.btn-accent:hover:before {
+  @apply transform-none delay-100 origin-left scale-x-100;
+}
+
 .btn-input {
   @apply bg-purple border-transparent text-white rounded  hover:opacity-75 hover:bg-purple hover:border-transparent duration-300;
+}
+
+.btn-thelist,
+.btn-list-a-job {
+  @apply gap-0;
 }

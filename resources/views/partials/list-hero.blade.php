@@ -1,30 +1,15 @@
 <section class="hero flex min-h-screen flex-col bg-white md:min-h-[50vh] xl:min-h-[65vh]">
     <div class="hero-main wrapper prose max-w-none px-8">
         <article>
-            <header class="flex flex-col py-10">
-                <div class="relative mx-auto flex w-full max-w-screen-lg items-center gap-2">
-                    <span class="text-light-gray h-5 w-5">
-                        @include('icons.icon-tassle')
-                    </span>
-                    <p
-                        class="after:border-light-gray before:border-light-gray m-0 flex grow items-center gap-2 before:block before:grow before:border-t-2 before:border-dashed after:block after:grow after:border-t-2 after:border-dashed">
-                        <span class="flex flex-col items-center text-xs">
-                            @php echo date('l, F j, Y'); @endphp
-                        </span>
-                    </p>
-                    <span class="text-light-gray h-5 w-5 rotate-180">
-                        @include('icons.icon-tassle')
-                    </span>
-                </div>
-
+            <header class="wrapper-l flex flex-col gap-2 py-10 xl:gap-4">
                 <h1
-                    class="font-circular-black *:text-[200%] *:lg:text-[425%] mb-0 flex flex-col items-center gap-3 uppercase lg:flex-row lg:gap-12">
-                    <div class="hero-title__text ml-auto">
+                    class="font-circular-black *:text-[200%] *:lg:text-[300%] *:xl:text-[425%] mb-0 flex flex-col items-center gap-3 md:flex-row md:gap-12">
+                    <div class="hero-title__text md:ml-auto">
                         <span>T</span>
                         <span>h</span>
                         <span>e</span>
                     </div>
-                    <div class="hero-title__text mr-auto">
+                    <div class="hero-title__text md:mr-auto">
                         <span>L</span>
                         <span>i</span>
                         <span>s</span>
@@ -32,53 +17,48 @@
                         <span class="text-orange">.</span>
                     </div>
                 </h1>
-
-                <div class="relative mx-auto flex w-full max-w-screen-lg items-center gap-2">
-                    <span class="text-light-gray h-5 w-5">
-                        @include('icons.icon-tassle')
-                    </span>
-                    <p
-                        class="after:border-light-gray before:border-light-gray m-0 flex grow items-center gap-2 before:block before:grow before:border-t-2 before:border-dashed after:block after:grow after:border-t-2 after:border-dashed">
-                        <span class="flex flex-col items-center text-xs">
-                            <span class="italic">By</span>
-                            <span class="font-circular-bold uppercase" data-shadow='Emily Rice'>Emily
-                                Rice </span>
-                        </span>
-                    </p>
-                    <span class="text-light-gray h-5 w-5 rotate-180">
-                        @include('icons.icon-tassle')
-                    </span>
-                </div>
-
             </header>
 
-            <section class="mx-auto w-full max-w-4xl py-6">
-                <article class="*:mt-0 columns-2 gap-6">
-                    <p>TheList is a global resource created and maintained
-                        by Emily Rice & Co to support the production accounting community.</p>
+            <section class="wrapper-l">
 
-                    <p>Use TheList to find your next role or post an open position in the production accounting or
-                        production finance community.</p>
+                <article class="*:mt-0 prose-sm max-w-none text-center">
+                    <div class="relative flex w-full items-center gap-2 xl:max-w-screen-lg">
+                        <span class="text-light-gray h-5 w-5">
+                            @include('icons.icon-tassle')
+                        </span>
+                        <p
+                            class="after:border-light-gray before:border-light-gray gap- m-0 flex grow items-center before:block before:grow before:border-t-2 before:border-dashed after:block after:grow after:border-t-2 after:border-dashed">
+                            <span class="flex flex-col items-center gap-1 px-4 text-xs">
+                                <span class="text-base">The Entertainment
+                                    Industry's Production Accounting & Finance Resource.</span>
+                            </span>
+                        </p>
+                        <span class="text-light-gray h-5 w-5 rotate-180">
+                            @include('icons.icon-tassle')
+                        </span>
+                    </div>
                 </article>
             </section>
         </article>
     </div>
-    <aside class="mx-auto w-full max-w-4xl py-24">
+    <aside class="mx-auto w-full max-w-4xl py-20">
         <article class="wrapper prose mx-auto text-center">
-            <h3>Hire Talent.</h3>
+            <h3>Looking to post a job?</h3>
 
-            <p>Looking to post a job? TheLIST has you covered. </p>
+            <p>TheLIST has you covered.</p>
 
-            @include('components.btn-list-job')
+            <a class="btn btn-secondary" href="/list-a-job">List a Job</a>
         </article>
     </aside>
-    <footer class="wrapper grid gap-4 p-4 py-32 xl:grid-cols-2">
-        <section>
-            @include('partials.list-newsletter')
-        </section>
+    <footer class="bg-star-gray w-full py-14 xl:py-32">
+        <div class="wrapper-l grid max-w-screen-xl gap-4 xl:grid-cols-2">
+            <section class="test">
+                @include('partials.list-newsletter')
+            </section>
 
-        <section class="">
-            @include('partials.list-advertise')
-        </section>
+            <section>
+                @include('partials.list-advertise')
+            </section>
+        </div>
     </footer>
 </section>
