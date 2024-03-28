@@ -1,15 +1,14 @@
 import domReady from '@roots/sage/client/dom-ready';
+
+// Static imports
 import {mediaQuery} from './js/media-query.js';
+import {nav} from './js/nav.js';
 
 /**
- * Application entrypoint
+ * Initializes the application.
  */
-domReady(async (err) => {
-  if (err) {
-    console.error(err);
-  }
-
-  const app = async () => {
+async function initApp() {
+  try {
     if (document.querySelector('.js-tabs')) {
       const {tabs} = await import('./js/tabs.js');
       tabs();
@@ -20,13 +19,28 @@ domReady(async (err) => {
       glide();
     }
 
+    nav();
     mediaQuery();
-  };
+    // Initialize other modules...
+  } catch (error) {
+    console.error('Error initializing modules:', error);
+  }
+}
 
-  app();
+/**
+ * Application entrypoint
+ */
+domReady((err) => {
+  if (err) {
+    console.error('Error on DOM ready:', err);
+    return;
+  }
+  initApp();
 });
 
 /**
- * @see {@link https://webpack.js.org/api/hot-module-replacement/}
+ * Hot Module Replacement
  */
-if (import.meta.webpackHot) import.meta.webpackHot.accept(console.error);
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept(console.error);
+}
